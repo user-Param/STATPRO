@@ -1,0 +1,22 @@
+Blink Started
+[LiveSource] Starting...
+[EAdapter] Exchange set to JUPITER
+[EAdapter] Starting (JUPITER)...
+[JUPITER] HFT adapter ready (REST polling v3)
+[EAdapter] Connected to exchange
+[EAdapter] Subscribed to 3 symbols
+[Server] Client Connected
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+[JUPITER] HTTP 429 (API Key might be missing or invalid)
+
+ Shutdown signal received
+EAdapter stopped
+libc++abi: terminating due to uncaught exception of type std::__1::system_error: mutex lock failed: Invalid argument

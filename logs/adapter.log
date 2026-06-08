@@ -1,0 +1,3 @@
+[WebSocket] Connected to server at localhost:9000
+[PostgreSQL] Connected to database: blink
+[Dadapter] Fatal error: End of file [asio.misc:2]

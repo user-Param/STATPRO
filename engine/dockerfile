@@ -1,0 +1,37 @@
+# Build stage
+FROM ubuntu:22.04 AS build
+RUN apt-get update && apt-get install -y \
+    cmake \
+    g++ \
+    libboost-all-dev \
+    libssl-dev \
+    python3-dev \
+    pybind11-dev \
+    nlohmann-json3-dev \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY . .
+# Remove the hardcoded pybind11 path from CMakeLists.txt for the container build
+RUN sed -i '/list(APPEND CMAKE_PREFIX_PATH "\/Users\/param\/Documents\/Stashpro\/.venv/d' CMakeLists.txt
+# Clear any host build artifacts to prevent CMake cache mismatch
+RUN rm -rf build && mkdir -p build && cd build && cmake .. && make
+
+# Runtime stage
+FROM ubuntu:22.04
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    libboost-thread1.74.0 \
+    libssl3 \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+COPY --from=build /app/build/engine /app/engine
+COPY --from=build /app/algos /app/algos
+COPY --from=build /app/include /app/include
+
+CMD ["./engine"]

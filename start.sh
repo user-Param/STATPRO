@@ -7,7 +7,6 @@ mkdir -p "$LOG_DIR"
 # Default: show all logs unless flags are given
 SHOW_ALL=true
 SHOW_ENGINE=false
-SHOW_EXECUTOR=false
 SHOW_DATAFEED=false
 SHOW_ADAPTER=false
 SHOW_RESEARCH=false
@@ -16,7 +15,6 @@ SHOW_RESEARCH=false
 for arg in "$@"; do
     case $arg in
         --engine)   SHOW_ENGINE=false; SHOW_ALL=false ;;
-        --executor) SHOW_EXECUTOR=false; SHOW_ALL=false ;;
         --datafeed) SHOW_DATAFEED=false; SHOW_ALL=false ;;
         --adapter)  SHOW_ADAPTER=false; SHOW_ALL=false ;;
         --research) SHOW_RESEARCH=false; SHOW_ALL=false ;;
@@ -50,12 +48,12 @@ ADAPTER_PID=$!
 echo "Dadapter started (PID: $ADAPTER_PID)"
 
 # 3. Executor
-cd "$PROJECT_ROOT/executor"
-if [ ! -d "build" ]; then mkdir build; fi
-cd build && cmake .. && make -j4
-./executor > "$LOG_DIR/executor.log" 2>&1 &
-EXECUTOR_PID=$!
-echo "Executor started (PID: $EXECUTOR_PID)"
+# cd "$PROJECT_ROOT/executor"
+# if [ ! -d "build" ]; then mkdir build; fi
+# cd build && cmake .. && make -j4
+# ./executor > "$LOG_DIR/executor.log" 2>&1 &
+# EXECUTOR_PID=$!
+# echo "Executor started (PID: $EXECUTOR_PID)"
 
 sleep 2
 
@@ -63,7 +61,7 @@ sleep 2
 echo "Starting statpro engine...."
 cd "$PROJECT_ROOT/engine"
 if [ ! -d "build" ]; then mkdir build; fi
-cd build && cmake .. && make -j4
+cd build && cmake .. -Dpybind11_DIR=/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11 && make -j4
 ./engine > "$LOG_DIR/engine.log" 2>&1 &
 ENGINE_PID=$!
 
@@ -71,7 +69,7 @@ ENGINE_PID=$!
 echo "Starting STATPRO Research Executor Backend..."
 cd "$PROJECT_ROOT"
 # Ensure dependencies are installed in the current python environment
-python3 -m pip install --quiet Flask flask-cors 2>/dev/null
+python3 -m pip install --quiet --break-system-packages Flask flask-cors 2>/dev/null
 # Try to apply database permissions if psql is available
 psql -h localhost -U statpro -d statpro -f "$PROJECT_ROOT/database/init.sql" >/dev/null 2>&1 || \
 psql -h localhost -d statpro -f "$PROJECT_ROOT/database/init.sql" >/dev/null 2>&1 || \
@@ -83,13 +81,13 @@ RESEARCH_PID=$!
 
 # 6. Frontend
 echo "Starting React frontend..."
-cd "$PROJECT_ROOT/user/statpro"
+cd "$PROJECT_ROOT/frontend/frontend"
 # Ensure dependencies are installed
 if [ ! -d "node_modules" ]; then
     echo "Installing frontend dependencies..."
     npm install --quiet
 fi
-npm run dev > "$LOG_DIR/frontend.log" 2>&1 &
+npm start > "$LOG_DIR/frontend.log" 2>&1 &
 REACT_PID=$!
 
 echo "All services are running. Logs are in $LOG_DIR/"
@@ -100,7 +98,6 @@ if [ "$SHOW_ALL" = true ]; then
     TAIL_CMD="$TAIL_CMD $LOG_DIR/*.log"
 else
     [ "$SHOW_ENGINE" = true ]   && TAIL_CMD="$TAIL_CMD $LOG_DIR/engine.log"
-    [ "$SHOW_EXECUTOR" = true ] && TAIL_CMD="$TAIL_CMD $LOG_DIR/executor.log"
     [ "$SHOW_DATAFEED" = true ] && TAIL_CMD="$TAIL_CMD $LOG_DIR/datafeed.log"
     [ "$SHOW_ADAPTER" = true ]  && TAIL_CMD="$TAIL_CMD $LOG_DIR/adapter.log"
     [ "$SHOW_RESEARCH" = true ] && TAIL_CMD="$TAIL_CMD $LOG_DIR/research.log"

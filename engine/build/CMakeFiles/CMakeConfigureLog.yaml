@@ -5127,3 +5127,87 @@ events:
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:372 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Performing Test HAS_FLTO_THIN"
+    directories:
+      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst"
+      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "HAS_FLTO_THIN"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e408a/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e408a.dir/build.make CMakeFiles/cmTC_e408a.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst'
+        Building CXX object CMakeFiles/cmTC_e408a.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_FLTO_THIN  -std=gnu++17 -arch arm64   -flto -MD -MT CMakeFiles/cmTC_e408a.dir/src.cxx.o -MF CMakeFiles/cmTC_e408a.dir/src.cxx.o.d -o CMakeFiles/cmTC_e408a.dir/src.cxx.o -c /Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst/src.cxx
+        Linking CXX executable cmTC_e408a
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e408a.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e408a.dir/src.cxx.o -o cmTC_e408a  -flto
+        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:382 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
+      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Performing Test HAS_FLTO"
+    directories:
+      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO"
+      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "HAS_FLTO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_2ba06/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_2ba06.dir/build.make CMakeFiles/cmTC_2ba06.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO'
+        Building CXX object CMakeFiles/cmTC_2ba06.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_FLTO  -std=gnu++17 -arch arm64   -flto -MD -MT CMakeFiles/cmTC_2ba06.dir/src.cxx.o -MF CMakeFiles/cmTC_2ba06.dir/src.cxx.o.d -o CMakeFiles/cmTC_2ba06.dir/src.cxx.o -c /Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO/src.cxx
+        Linking CXX executable cmTC_2ba06
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ba06.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2ba06.dir/src.cxx.o -o cmTC_2ba06  -flto
+        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO'
+        
+      exitCode: 0
+...

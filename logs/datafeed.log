@@ -1,22 +1,10 @@
-Blink Started
+Statpro Started
 [LiveSource] Starting...
-[EAdapter] Exchange set to JUPITER
-[EAdapter] Starting (JUPITER)...
-[JUPITER] HFT adapter ready (REST polling v3)
+[EAdapter] Exchange set to BINANCE
+[EAdapter] Starting (BINANCE)...
+[Exchange1] Connected to Binance WebSocket
 [EAdapter] Connected to exchange
+[Exchange1] Subscribed to tickers for: BTCUSDT ETHUSDT SOLUSDT 
 [EAdapter] Subscribed to 3 symbols
 [Server] Client Connected
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-[JUPITER] HTTP 429 (API Key might be missing or invalid)
-
- Shutdown signal received
-EAdapter stopped
-libc++abi: terminating due to uncaught exception of type std::__1::system_error: mutex lock failed: Invalid argument
+Read error: End of file

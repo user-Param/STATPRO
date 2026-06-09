@@ -6,7 +6,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center h-full py-20 text-center gap-8">
       <div className="space-y-4">
         <h1 className="text-5xl font-extrabold tracking-tight">
-          Welcome to <span className="text-blue-500">Stashpro</span>
+          Welcome to <span className="text-blue-500">Statpro</span>
         </h1>
         <p className="text-zinc-400 text-lg max-w-md mx-auto">
           The professional interface for spot and perpetual trading agents.

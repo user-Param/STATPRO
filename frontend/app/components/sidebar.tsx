@@ -10,6 +10,7 @@ const Sidebar = () => {
   const menuItems = [
     { name: 'Spot', href: '/spot', icon: '' },
     { name: 'Perp', href: '/perp', icon: '' },
+    { name: 'Corelation', href: '/corelation', icon: '' },
     { name: 'Profile', href: '/profile', icon: '' },
   ];
 

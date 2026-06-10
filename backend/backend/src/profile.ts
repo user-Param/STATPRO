@@ -1,7 +1,6 @@
 import { db } from "./client";
 import { profiles, balances, wallets } from "./schema";
 import { eq } from "drizzle-orm";
-import { safeParseJson } from "./utils";
 
 export const profile = {
   async get(userId: number) {
@@ -11,9 +10,7 @@ export const profile = {
 
   async update(userId: number, req: Request) {
     try {
-      const body = await safeParseJson(req);
-      if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
-      const { bio, avatarUrl } = body;
+      const { bio, avatarUrl } = await req.json();
 
       await db.update(profiles)
         .set({ bio, avatarUrl })

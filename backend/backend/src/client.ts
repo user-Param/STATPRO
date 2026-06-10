@@ -5,4 +5,4 @@ import * as schema from "./schema";
 // Bun.sql is natively supported and high performance
 const sql = new SQL(process.env.DATABASE_URL || "postgres://statpro@localhost:5432/statpro");
 
-export const db = drizzle(sql, { schema, logger: true });
+export const db = drizzle(sql, { schema });

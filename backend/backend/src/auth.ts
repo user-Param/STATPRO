@@ -2,7 +2,6 @@ import { SignJWT, jwtVerify } from "jose";
 import { db } from "./client";
 import { users } from "./schema";
 import { eq } from "drizzle-orm";
-import { safeParseJson } from "./utils";
 
 const JWT_SECRET = process.env.JWT_SECRET || "secret-key-for-dev";
 const encodedSecret = new TextEncoder().encode(JWT_SECRET);
@@ -10,15 +9,11 @@ const encodedSecret = new TextEncoder().encode(JWT_SECRET);
 export const auth = {
   async signup(req: Request) {
     try {
-      const body = await safeParseJson(req);
-      if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
-      const { username, email, password } = body;
-      console.log(`\x1b[33m[Auth]\x1b[0m Attempting signup for user: ${username} (${email})`);
+      const { username, email, password } = await req.json();
 
       // Check if user exists
       const existing = await db.select().from(users).where(eq(users.email, email)).limit(1);
       if (existing.length > 0) {
-        console.warn(`\x1b[33m[Auth]\x1b[0m Signup failed: User ${email} already exists`);
         return new Response(JSON.stringify({ error: "User already exists" }), { status: 400 });
       }
 
@@ -31,24 +26,19 @@ export const auth = {
         passwordHash,
       }).returning();
 
-      console.log(`\x1b[32m[Auth]\x1b[0m User created successfully: ID ${newUser.id}`);
       return new Response(JSON.stringify({ message: "User created", userId: newUser.id }), { status: 201 });
     } catch (e) {
-      console.error("\x1b[31m[Auth Error]\x1b[0m Signup error:", e);
+      console.error("Signup error:", e);
       return new Response(JSON.stringify({ error: "Invalid request", details: e instanceof Error ? e.message : String(e) }), { status: 400 });
     }
   },
 
   async signin(req: Request) {
     try {
-      const body = await safeParseJson(req);
-      if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
-      const { email, password } = body;
-      console.log(`\x1b[33m[Auth]\x1b[0m Attempting signin for: ${email}`);
+      const { email, password } = await req.json();
 
       const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
       if (!user || !(await Bun.password.verify(password, user.passwordHash))) {
-        console.warn(`\x1b[33m[Auth]\x1b[0m Signin failed: Invalid credentials for ${email}`);
         return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
       }
 
@@ -57,10 +47,8 @@ export const auth = {
         .setExpirationTime("24h")
         .sign(encodedSecret);
 
-      console.log(`\x1b[32m[Auth]\x1b[0m Signin successful for user ID: ${user.id}`);
       return new Response(JSON.stringify({ token }), { status: 200 });
     } catch (e) {
-      console.error("\x1b[31m[Auth Error]\x1b[0m Signin failed:", e);
       return new Response(JSON.stringify({ error: "Authentication failed" }), { status: 401 });
     }
   },

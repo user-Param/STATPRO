@@ -1,89 +1,102 @@
+import express from "express";
 import { auth } from "./src/auth";
-import { profile } from "./src/profile";
 import { trade } from "./src/trade";
-import { jsonResponse } from "./src/utils";
+import { profile } from "./src/profile";
 
-console.log("Stashpro Trading API starting...");
+const app = express();
+app.use(express.json()); // Parse JSON bodies
+const port = process.env.PORT || 3000;
 
-const logger = async (req: Request, handler: (req: Request) => Promise<Response>) => {
-  const start = Date.now();
-  const method = req.method;
-  const url = new URL(req.url).pathname;
+/**
+ * Helper to convert Express req to Web Request
+ * This allows us to keep the existing business logic in src/
+ * without rewriting every handler to use (req, res).
+ */
+function createWebRequest(req: express.Request) {
+  return new Request(`http://localhost:${port}${req.url}`, {
+    method: req.method,
+    headers: req.headers as HeadersInit,
+    body: JSON.stringify(req.body),
+  });
+}
 
-  console.log(`\x1b[36m[API Request]\x1b[0m ${method} ${url}`);
-
+/**
+ * Helper to handle Web Response in Express
+ */
+async function handleResponse(res: express.Response, webResponse: Response) {
+  const text = await webResponse.text();
+  let json;
   try {
-    const response = await handler(req);
-    const duration = Date.now() - start;
-    const statusColor = response.status >= 400 ? "\x1b[31m" : "\x1b[32m";
-    console.log(`${statusColor}[API Response]\x1b[0m ${method} ${url} - ${response.status} (${duration}ms)`);
-    
-    // If it's already a Response with Content-Type, return it
-    if (response.headers.get("Content-Type") === "application/json") {
-      return response;
-    }
-
-    // Otherwise, ensure it has the header
-    const headers = new Headers(response.headers);
-    headers.set("Content-Type", "application/json");
-    
-    return new Response(response.body, {
-      status: response.status,
-      headers
-    });
-  } catch (err) {
-    const duration = Date.now() - start;
-    const errorMessage = err instanceof Error ? err.message : String(err);
-    console.error(`\x1b[31m[API Error]\x1b[0m ${method} ${url} - 500 (${duration}ms): ${errorMessage}`);
-    
-    // Check if it's a JSON parse error (usually 400, not 500)
-    const status = errorMessage.includes("Invalid JSON") ? 400 : 500;
-    return jsonResponse({ error: status === 400 ? "Bad Request" : "Internal Server Error", details: errorMessage }, status);
+    json = JSON.parse(text);
+  } catch {
+    json = text;
   }
-};
+  res.status(webResponse.status).json(json);
+}
 
-Bun.serve({
-  port: 3000,
-  async fetch(req) {
-    const url = new URL(req.url).pathname;
-    const method = req.method;
-
-    const routes: Record<string, Record<string, (req: Request) => Promise<Response>>> = {
-      "/api/auth/signup": {
-        POST: (req) => auth.signup(req),
-      },
-      "/api/auth/signin": {
-        POST: (req) => auth.signin(req),
-      },
-      "/api/profile": {
-        GET: (req) => auth.verifyJwt(req, (userId) => profile.get(userId)),
-        PATCH: (req) => auth.verifyJwt(req, (userId) => profile.update(userId, req)),
-      },
-      "/api/profile/balances": {
-        GET: (req) => auth.verifyJwt(req, (userId) => profile.getBalances(userId)),
-      },
-      "/api/trade/order": {
-        POST: (req) => auth.verifyJwt(req, (userId) => trade.createOrder(userId, req)),
-      },
-      "/api/trade/history": {
-        GET: (req) => auth.verifyJwt(req, (userId) => trade.getHistory(userId)),
-      },
-      "/api/wallet/connect": {
-        POST: (req) => auth.verifyJwt(req, (userId) => trade.connectWallet(userId)),
-      },
-    };
-
-    const route = routes[url];
-    if (route && route[method]) {
-      return logger(req, route[method]);
-    }
-
-    return jsonResponse({ error: "Not Found" }, 404);
-  },
-  error: (req, err) => {
-    console.error(`\x1b[31m[Server Error]\x1b[0m ${req.method} ${req.url}:`, err);
-    return jsonResponse({ error: "Internal Server Error" }, 500);
-  },
+// --- Auth Routes ---
+app.post("/signup", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.signup(webReq);
+  await handleResponse(res, response);
 });
 
-console.log("Listening on http://localhost:3000");
+app.post("/signin", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.signin(webReq);
+  await handleResponse(res, response);
+});
+
+// --- Trade Routes (Protected) ---
+app.post("/trade", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    return await trade.createOrder(userId, webReq);
+  });
+  await handleResponse(res, response);
+});
+
+app.get("/history", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    return await trade.getHistory(userId);
+  });
+  await handleResponse(res, response);
+});
+
+app.post("/connect-wallet", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    return await trade.connectWallet(userId);
+  });
+  await handleResponse(res, response);
+});
+
+// --- Profile Routes (Protected) ---
+app.get("/profile", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    return await profile.get(userId);
+  });
+  await handleResponse(res, response);
+});
+
+app.post("/profile", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    return await profile.update(userId, webReq);
+  });
+  await handleResponse(res, response);
+});
+
+app.get("/balance", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    return await profile.getBalances(userId);
+  });
+  await handleResponse(res, response);
+});
+
+app.listen(port, () => {
+  console.log(`\x1b[32m[Server]\x1b[0m Node.js API Layer running on port ${port}`);
+});

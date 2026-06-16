@@ -1,6 +1,7 @@
-import { sql } from "bun";
+import pg from "pg";
 
-const db = new sql(process.env.DATABASE_URL || "postgres://statpro@localhost:5432/statpro");
+const connectionString = process.env.DATABASE_URL || "postgres://statpro@localhost:5432/statpro";
+const client = new pg.Client({ connectionString });
 
 const schema = `
 CREATE TABLE IF NOT EXISTS users (
@@ -52,11 +53,13 @@ CREATE TABLE IF NOT EXISTS trades (
 
 async function init() {
   try {
-    await db.execute(schema);
-    console.log("✅ Database schema initialized successfully.");
+    await client.connect();
+    await client.query(schema);
+    console.log("Database schema initialized successfully.");
   } catch (e) {
-    console.error("❌ Error initializing database:", e);
+    console.error("Error initializing database:", e);
   } finally {
+    await client.end();
     process.exit();
   }
 }

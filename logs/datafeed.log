@@ -6,8 +6,8 @@ Statpro Started
 [EAdapter] Connected to exchange
 [Exchange1] Subscribed to tickers for: BTCUSDT ETHUSDT SOLUSDT 
 [EAdapter] Subscribed to 3 symbols
+[Exchange1] Read error: End of file [asio.misc:2]
+[Exchange1] Read loop ended
 
  Shutdown signal received
 EAdapter stopped
-[Exchange1] Read error: stream truncated [asio.ssl.stream:1]
-[Exchange1] Read loop ended

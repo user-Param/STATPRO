@@ -3,6 +3,7 @@ import { db } from "./client";
 import { users } from "./schema";
 import { eq } from "drizzle-orm";
 import { safeParseJson } from "./utils";
+import bcrypt from "bcryptjs";
 
 const JWT_SECRET = process.env.JWT_SECRET || "secret-key-for-dev";
 const encodedSecret = new TextEncoder().encode(JWT_SECRET);
@@ -22,8 +23,8 @@ export const auth = {
         return new Response(JSON.stringify({ error: "User already exists" }), { status: 400 });
       }
 
-      // Hash password using Bun's native API
-      const passwordHash = await Bun.password.hash(password);
+      // Hash password using bcryptjs
+      const passwordHash = await bcrypt.hash(password, 10);
 
       const [newUser] = await db.insert(users).values({
         username,
@@ -47,7 +48,7 @@ export const auth = {
       console.log(`\x1b[33m[Auth]\x1b[0m Attempting signin for: ${email}`);
 
       const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
-      if (!user || !(await Bun.password.verify(password, user.passwordHash))) {
+      if (!user || !(await bcrypt.compare(password, user.passwordHash))) {
         console.warn(`\x1b[33m[Auth]\x1b[0m Signin failed: Invalid credentials for ${email}`);
         return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
       }

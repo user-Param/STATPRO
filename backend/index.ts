@@ -1,11 +1,13 @@
 import express from "express";
+import cors from "cors";
 import { auth } from "./src/auth";
 import { trade } from "./src/trade";
 import { profile } from "./src/profile";
 
 const app = express();
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON bodies
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 /**
  * Helper to convert Express req to Web Request

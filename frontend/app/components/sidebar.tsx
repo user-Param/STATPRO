@@ -8,8 +8,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   const menuItems = [
-    { name: 'Spot', href: '/spot', icon: '' },
-    { name: 'Perp', href: '/perp', icon: '' },
+    { name: 'Trade', href: '/spot', icon: '' },
     { name: 'Corelation', href: '/corelation', icon: '' },
     { name: 'Profile', href: '/profile', icon: '' },
   ];

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import subprocess, os, time, signal
 
-PROJECT = "/Users/param/Documents/Stashpro"
+PROJECT = "/Users/param/Documents/STATPRO"
 LOG = f"{PROJECT}/logs"
 
 def run(cmd, cwd=None):

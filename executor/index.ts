@@ -1,4 +1,5 @@
 import { Redis } from "ioredis";
+import { WebSocketServer } from "ws";
 
 const redis = new Redis(process.env.REDIS_URL || "redis://localhost:6379");
 
@@ -13,7 +14,8 @@ class WalletAgentService {
   }
 
   async signTrade(walletId: number, tradeDetails: any) {
-    console.log(`[Executor] Signing trade for wallet ${walletId} via Agent Kit...`);
+    console.log(`[Executor] Signing ${tradeDetails.market_type || 'SPOT'} trade for wallet ${walletId} via Agent Kit...`);
+    console.log(`[Executor] Details: ${tradeDetails.side} ${tradeDetails.quantity} ${tradeDetails.symbol} @ ${tradeDetails.price} (Leverage: ${tradeDetails.leverage || 1}x)`);
     // This is where the actual Trust Wallet Agent Kit SDK would be used
     return {
       signature: "0x_signed_payload_from_agent_kit",
@@ -26,45 +28,18 @@ const walletAgent = new WalletAgentService();
 
 console.log("🚀 Execution Service starting...");
 
+// --- HTTP API (for Frontend/API requests) ---
 Bun.serve({
-  port: 4000, // Different port from API (3000)
+  port: 4001,
   routes: {
     "/execute": {
       POST: async (req) => {
         try {
           const body = await req.json();
           const { userId, walletId, symbol, side, type, amount, price } = body;
-
-          console.log(`[Executor] Received execution request for ${symbol} ${side}`);
-
-          // 1. Sign the trade using the Agent Kit
-          const signing = await walletAgent.signTrade(walletId, { symbol, side, type, amount, price });
-
-          // 2. Broadcast to Blockchain (Mocked)
-          console.log(`[Executor] Broadcasting tx ${signing.txHash} to blockchain...`);
-
-          // Simulate blockchain delay
-          setTimeout(async () => {
-            console.log(`[Executor] Trade ${signing.txHash} confirmed on-chain.`);
-
-            // 3. Signal back to the system via Redis
-            const event = {
-              tradeId: body.tradeId, // The ID created by the API layer
-              status: "FILLED",
-              pnl: (Math.random() * 10).toFixed(2),
-              txHash: signing.txHash
-            };
-            await redis.publish("ORDER_EVENTS", JSON.stringify(event));
-          }, 2000);
-
-          return new Response(JSON.stringify({
-            success: true,
-            txHash: signing.txHash,
-            message: "Transaction broadcasted"
-          }), { status: 200 });
-
+          const signing = await walletAgent.signTrade(walletId, { symbol, side, type, quantity: amount, price });
+          return new Response(JSON.stringify({ success: true, txHash: signing.txHash }), { status: 200 });
         } catch (e) {
-          console.error("[Executor] Execution error:", e);
           return new Response(JSON.stringify({ error: "Execution failed" }), { status: 500 });
         }
       }
@@ -79,4 +54,55 @@ Bun.serve({
   }
 });
 
-console.log("Executor listening on http://localhost:4000");
+// --- WebSocket Server (for C++ Engine / RiskManager) ---
+const wss = new WebSocketServer({ port: 9001 });
+
+wss.on("connection", (ws) => {
+  console.log("[Executor] ✓ Engine connected via WebSocket on port 9001");
+
+  ws.on("message", async (data) => {
+    try {
+      const order = JSON.parse(data.toString());
+      if (order.type === "order") {
+        console.log(`[Executor] ⚡ Received Order from Engine: ${order.side} ${order.symbol}`);
+        
+        // 1. Sign trade via Agent Kit
+        const signing = await walletAgent.signTrade(0, {
+          symbol: order.symbol,
+          side: order.side,
+          price: order.price,
+          quantity: order.quantity,
+          leverage: order.leverage,
+          market_type: order.market_type
+        });
+
+        // 2. Broadcast result back to Engine
+        ws.send(JSON.stringify({
+          type: "order_result",
+          order_id: order.order_id,
+          status: "FILLED",
+          strategy_id: order.strategy_id,
+          txHash: signing.txHash
+        }));
+
+        // 3. Update Redis for UI
+        await redis.publish("ORDER_EVENTS", JSON.stringify({
+          tradeId: order.order_id,
+          status: "FILLED",
+          symbol: order.symbol,
+          side: order.side,
+          pnl: "0.00",
+          txHash: signing.txHash
+        }));
+      }
+    } catch (err) {
+      console.error("[Executor] Error processing order:", err);
+    }
+  });
+
+  ws.on("close", () => {
+    console.log("[Executor] Engine disconnected");
+  });
+});
+
+console.log("Executor listening on http://localhost:4001 (HTTP) and ws://localhost:9001 (WS)");

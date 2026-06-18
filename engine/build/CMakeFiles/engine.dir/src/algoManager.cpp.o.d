@@ -1,6 +1,6 @@
 CMakeFiles/engine.dir/src/algoManager.cpp.o: \
-  /Users/param/Documents/Stashpro/engine/src/algoManager.cpp \
-  /Users/param/Documents/Stashpro/engine/src/../include/algoManager.h \
+  /Users/param/Documents/STATPRO/engine/src/algoManager.cpp \
+  /Users/param/Documents/STATPRO/engine/src/../include/algoManager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -810,9 +810,9 @@ CMakeFiles/engine.dir/src/algoManager.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/algo.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/marketData.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/riskManager.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/algo.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/marketData.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/riskManager.h \
   /opt/homebrew/include/boost/beast/core.hpp \
   /opt/homebrew/include/boost/beast/core/detail/config.hpp \
   /opt/homebrew/include/boost/config.hpp \
@@ -1847,14 +1847,14 @@ CMakeFiles/engine.dir/src/algoManager.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/algo/python_algo.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/algo/../algo.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/embed.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/pybind11.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/class.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/attr.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/common.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/conduit/wrap_include_python_h.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/algo/python_algo.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/algo/../algo.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/embed.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/pybind11.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/class.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/attr.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/common.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/conduit/wrap_include_python_h.h \
   /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/Python.h \
   /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/patchlevel.h \
   /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/pyconfig.h \
@@ -1983,36 +1983,36 @@ CMakeFiles/engine.dir/src/algoManager.cpp.o: \
   /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/tracemalloc.h \
   /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/frameobject.h \
   /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/frameobject.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/pybind11_namespace_macros.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/pybind11_namespace_macros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/barrier \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/cast.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/argument_vector.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/pytypes.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/buffer_info.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/descr.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/holder_caster_foreign_helpers.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/gil.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/internals.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/conduit/pybind11_platform_abi_id.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/gil_simple.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/trampoline_self_life_support.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/using_smart_holder.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/struct_smart_holder.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/value_and_holder.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/native_enum_data.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/../pytypes.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/type_caster_base.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/cpp_conduit.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/typeid.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/cast.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/argument_vector.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/pytypes.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/buffer_info.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/descr.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/holder_caster_foreign_helpers.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/gil.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/internals.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/conduit/pybind11_platform_abi_id.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/gil_simple.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/trampoline_self_life_support.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/using_smart_holder.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/struct_smart_holder.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/value_and_holder.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/native_enum_data.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/../pytypes.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/type_caster_base.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/cpp_conduit.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/typeid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cxxabi.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cxxabi_config.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/options.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/exception_translation.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/function_record_pyobject.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/detail/init.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/gil_safe_call_once.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/typing.h \
-  /opt/homebrew/lib/python3.14/site-packages/pybind11/include/pybind11/eval.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/options.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/exception_translation.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/function_record_pyobject.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/detail/init.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/gil_safe_call_once.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/typing.h \
+  /opt/homebrew/Cellar/pybind11/3.0.4/include/pybind11/eval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

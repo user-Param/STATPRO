@@ -1,6 +1,6 @@
 CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
-  /Users/param/Documents/Stashpro/datafeed/live_source/live_source.cpp \
-  /Users/param/Documents/Stashpro/datafeed/live_source/live_source.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/live_source.cpp \
+  /Users/param/Documents/STATPRO/datafeed/live_source/live_source.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -545,7 +545,7 @@ CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward_like.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../session/session_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h \
@@ -779,8 +779,8 @@ CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../market_data.h \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../../broker/include/adapter/eadapter.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../market_data.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../../broker/include/adapter/eadapter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
@@ -803,7 +803,7 @@ CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange1.h \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange1.h \
   /opt/homebrew/include/boost/beast/core.hpp \
   /opt/homebrew/include/boost/beast/core/detail/config.hpp \
   /opt/homebrew/include/boost/config.hpp \
@@ -1954,7 +1954,7 @@ CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
   /opt/homebrew/include/nlohmann/ordered_map.hpp \
   /opt/homebrew/include/nlohmann/detail/macro_unscope.hpp \
   /opt/homebrew/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange2.h \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange2.h \
   /opt/homebrew/include/boost/beast/http.hpp \
   /opt/homebrew/include/boost/beast/http/basic_dynamic_body.hpp \
   /opt/homebrew/include/boost/beast/http/basic_dynamic_body_fwd.hpp \
@@ -1974,9 +1974,9 @@ CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
   /opt/homebrew/include/boost/beast/http/span_body_fwd.hpp \
   /opt/homebrew/include/boost/beast/http/vector_body.hpp \
   /opt/homebrew/include/boost/beast/http/vector_body_fwd.hpp \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange3.h \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../server/server.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../server/server.h \
   /opt/homebrew/include/boost/asio/strand.hpp \
   /opt/homebrew/include/boost/asio/detail/strand_executor_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_executor_service.hpp \
@@ -1987,4 +1987,4 @@ CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: \
   /opt/homebrew/include/boost/asio/detail/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.ipp \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../server/../session/session_manager.h
+  /Users/param/Documents/STATPRO/datafeed/live_source/../server/../session/session_manager.h

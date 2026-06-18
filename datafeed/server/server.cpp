@@ -94,6 +94,13 @@ void websocket_session::do_read()
 
 std::vector<std::string> websocket_session::extract_topics(const std::string &msg)
 {
+    try {
+        auto j = nlohmann::json::parse(msg);
+        if (j.contains("subscribe") && j["subscribe"].is_array()) {
+            return j["subscribe"].get<std::vector<std::string>>();
+        }
+    } catch (...) {}
+
     std::vector<std::string> topics;
     if (msg.find("ticker") != std::string::npos)
         topics.push_back("ticker_");
@@ -149,7 +156,20 @@ void websocket_session::on_read(beast::error_code ec, std::size_t bytes_transfer
             std::lock_guard<std::mutex> lock(g_adapter_mutex);
             if (g_adapter_session && this == g_adapter_session.get())
             {
+                // Intelligent symbol-based broadcast
+                std::string symbol = j.value("symbol", "");
+                if (symbol.empty() && j.contains("topic")) {
+                    std::string topic = j["topic"];
+                    if (topic.find("ticker_") == 0) symbol = topic.substr(7);
+                }
+
+                if (!symbol.empty()) {
+                    manager_->broadcast_to_topic("ticker_" + symbol, msg);
+                    manager_->broadcast_to_topic("price_" + symbol, msg);
+                }
+
                 // Broadcast to all market topics
+                manager_->broadcast_to_topic("ticker_", msg);
                 manager_->broadcast_to_topic("price_", msg);
                 manager_->broadcast_to_topic("backtest_price_", msg);
                 manager_->broadcast_to_topic("bid_", msg);

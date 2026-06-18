@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/param/Documents/Stashpro/datafeed
+CMAKE_SOURCE_DIR = /Users/param/Documents/STATPRO/datafeed
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/param/Documents/Stashpro/datafeed/build
+CMAKE_BINARY_DIR = /Users/param/Documents/STATPRO/datafeed/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles /Users/param/Documents/Stashpro/datafeed/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles /Users/param/Documents/STATPRO/datafeed/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,125 +142,125 @@ dadapter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/build
 .PHONY : dadapter/fast
 
-Users/param/Documents/Stashpro/broker/src/adapter/eadapter.o: Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/adapter/eadapter.o
+Users/param/Documents/STATPRO/broker/src/adapter/eadapter.o: Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/adapter/eadapter.o
 
 # target to build an object file
-Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o
+Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o
 
-Users/param/Documents/Stashpro/broker/src/adapter/eadapter.i: Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/adapter/eadapter.i
+Users/param/Documents/STATPRO/broker/src/adapter/eadapter.i: Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/adapter/eadapter.i
 
 # target to preprocess a source file
-Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i
+Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i
 
-Users/param/Documents/Stashpro/broker/src/adapter/eadapter.s: Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/adapter/eadapter.s
+Users/param/Documents/STATPRO/broker/src/adapter/eadapter.s: Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/adapter/eadapter.s
 
 # target to generate assembly for a file
-Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s
+Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange1.o: Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange1.o
+Users/param/Documents/STATPRO/broker/src/exchange/exchange1.o: Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange1.o
 
 # target to build an object file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o
+Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange1.i: Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange1.i
+Users/param/Documents/STATPRO/broker/src/exchange/exchange1.i: Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange1.i
 
 # target to preprocess a source file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i
+Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange1.s: Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange1.s
+Users/param/Documents/STATPRO/broker/src/exchange/exchange1.s: Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange1.s
 
 # target to generate assembly for a file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s
+Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange2.o: Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange2.o
+Users/param/Documents/STATPRO/broker/src/exchange/exchange2.o: Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange2.o
 
 # target to build an object file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o
+Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange2.i: Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange2.i
+Users/param/Documents/STATPRO/broker/src/exchange/exchange2.i: Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange2.i
 
 # target to preprocess a source file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i
+Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange2.s: Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange2.s
+Users/param/Documents/STATPRO/broker/src/exchange/exchange2.s: Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange2.s
 
 # target to generate assembly for a file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s
+Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange3.o: Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange3.o
+Users/param/Documents/STATPRO/broker/src/exchange/exchange3.o: Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange3.o
 
 # target to build an object file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o
+Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange3.i: Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange3.i
+Users/param/Documents/STATPRO/broker/src/exchange/exchange3.i: Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange3.i
 
 # target to preprocess a source file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i
+Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i
 
-Users/param/Documents/Stashpro/broker/src/exchange/exchange3.s: Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange3.s
+Users/param/Documents/STATPRO/broker/src/exchange/exchange3.s: Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange3.s
 
 # target to generate assembly for a file
-Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s
-.PHONY : Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s
+Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s
+.PHONY : Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s
 
-Users/param/Documents/Stashpro/database/Dadapter.o: Users/param/Documents/Stashpro/database/Dadapter.cpp.o
-.PHONY : Users/param/Documents/Stashpro/database/Dadapter.o
+Users/param/Documents/STATPRO/database/Dadapter.o: Users/param/Documents/STATPRO/database/Dadapter.cpp.o
+.PHONY : Users/param/Documents/STATPRO/database/Dadapter.o
 
 # target to build an object file
-Users/param/Documents/Stashpro/database/Dadapter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o
-.PHONY : Users/param/Documents/Stashpro/database/Dadapter.cpp.o
+Users/param/Documents/STATPRO/database/Dadapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o
+.PHONY : Users/param/Documents/STATPRO/database/Dadapter.cpp.o
 
-Users/param/Documents/Stashpro/database/Dadapter.i: Users/param/Documents/Stashpro/database/Dadapter.cpp.i
-.PHONY : Users/param/Documents/Stashpro/database/Dadapter.i
+Users/param/Documents/STATPRO/database/Dadapter.i: Users/param/Documents/STATPRO/database/Dadapter.cpp.i
+.PHONY : Users/param/Documents/STATPRO/database/Dadapter.i
 
 # target to preprocess a source file
-Users/param/Documents/Stashpro/database/Dadapter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.i
-.PHONY : Users/param/Documents/Stashpro/database/Dadapter.cpp.i
+Users/param/Documents/STATPRO/database/Dadapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.i
+.PHONY : Users/param/Documents/STATPRO/database/Dadapter.cpp.i
 
-Users/param/Documents/Stashpro/database/Dadapter.s: Users/param/Documents/Stashpro/database/Dadapter.cpp.s
-.PHONY : Users/param/Documents/Stashpro/database/Dadapter.s
+Users/param/Documents/STATPRO/database/Dadapter.s: Users/param/Documents/STATPRO/database/Dadapter.cpp.s
+.PHONY : Users/param/Documents/STATPRO/database/Dadapter.s
 
 # target to generate assembly for a file
-Users/param/Documents/Stashpro/database/Dadapter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.s
-.PHONY : Users/param/Documents/Stashpro/database/Dadapter.cpp.s
+Users/param/Documents/STATPRO/database/Dadapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.s
+.PHONY : Users/param/Documents/STATPRO/database/Dadapter.cpp.s
 
 backtest_source/backtest_source.o: backtest_source/backtest_source.cpp.o
 .PHONY : backtest_source/backtest_source.o
@@ -368,21 +368,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dadapter"
 	@echo "... datafeed"
-	@echo "... Users/param/Documents/Stashpro/broker/src/adapter/eadapter.o"
-	@echo "... Users/param/Documents/Stashpro/broker/src/adapter/eadapter.i"
-	@echo "... Users/param/Documents/Stashpro/broker/src/adapter/eadapter.s"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange1.o"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange1.i"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange1.s"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange2.o"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange2.i"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange2.s"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange3.o"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange3.i"
-	@echo "... Users/param/Documents/Stashpro/broker/src/exchange/exchange3.s"
-	@echo "... Users/param/Documents/Stashpro/database/Dadapter.o"
-	@echo "... Users/param/Documents/Stashpro/database/Dadapter.i"
-	@echo "... Users/param/Documents/Stashpro/database/Dadapter.s"
+	@echo "... Users/param/Documents/STATPRO/broker/src/adapter/eadapter.o"
+	@echo "... Users/param/Documents/STATPRO/broker/src/adapter/eadapter.i"
+	@echo "... Users/param/Documents/STATPRO/broker/src/adapter/eadapter.s"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange1.o"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange1.i"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange1.s"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange2.o"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange2.i"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange2.s"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange3.o"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange3.i"
+	@echo "... Users/param/Documents/STATPRO/broker/src/exchange/exchange3.s"
+	@echo "... Users/param/Documents/STATPRO/database/Dadapter.o"
+	@echo "... Users/param/Documents/STATPRO/database/Dadapter.i"
+	@echo "... Users/param/Documents/STATPRO/database/Dadapter.s"
 	@echo "... backtest_source/backtest_source.o"
 	@echo "... backtest_source/backtest_source.i"
 	@echo "... backtest_source/backtest_source.s"

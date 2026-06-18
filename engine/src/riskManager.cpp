@@ -61,7 +61,7 @@ void RiskManager::connectExecutor() {
 }
 
 bool RiskManager::validateAndSend(const std::string& symbol, double price, int quantity, 
-                                 const std::string& side, const std::string& strategy_id) {
+                                 const std::string& side, const std::string& strategy_id, int leverage) {
     if (quantity <= 0) {
         std::cerr << "[RiskManager] Rejected: Invalid quantity " << quantity << std::endl;
         return false;
@@ -73,6 +73,8 @@ bool RiskManager::validateAndSend(const std::string& symbol, double price, int q
         {"price", price},
         {"quantity", quantity},
         {"side", side},
+        {"leverage", leverage},
+        {"market_type", "PERP"},
         {"strategy_id", strategy_id},
         {"order_type", "LIMIT"},
         {"order_id", symbol + "_" + side + "_" + std::to_string(std::time(nullptr))},
@@ -88,8 +90,9 @@ bool RiskManager::validateAndSend(const std::string& symbol, double price, int q
     if (connected_ && ws_->is_open()) {
         try {
             ws_->write(net::buffer(order.dump()));
-            std::cout << "[RiskManager] ✓ Order sent [" << strategy_id << "]: " 
-                      << symbol << " " << side << " " << quantity << " @ $" << price << std::endl;
+            std::cout << "[RiskManager] ✓ Perp Order sent [" << strategy_id << "]: " 
+                      << symbol << " " << side << " " << quantity << " @ $" << price 
+                      << " (Lev: " << leverage << "x)" << std::endl;
             return true;
         } catch (const std::exception& e) {
             std::cerr << "[RiskManager] Send error: " << e.what() << std::endl;

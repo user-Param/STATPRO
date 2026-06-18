@@ -1,6 +1,6 @@
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o: \
-  /Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange2.h \
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o: \
+  /Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -1787,7 +1787,6 @@ CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/excha
   /opt/homebrew/include/boost/asio/ssl/detail/shutdown_op.hpp \
   /opt/homebrew/include/boost/asio/ssl/detail/write_op.hpp \
   /opt/homebrew/include/boost/beast/websocket/impl/ssl.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /opt/homebrew/include/nlohmann/json.hpp \
   /opt/homebrew/include/nlohmann/adl_serializer.hpp \
   /opt/homebrew/include/nlohmann/detail/abi_macros.hpp \
@@ -1867,4 +1866,5 @@ CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/excha
   /opt/homebrew/include/nlohmann/detail/conversions/to_chars.hpp \
   /opt/homebrew/include/nlohmann/ordered_map.hpp \
   /opt/homebrew/include/nlohmann/detail/macro_unscope.hpp \
-  /opt/homebrew/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+  /opt/homebrew/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

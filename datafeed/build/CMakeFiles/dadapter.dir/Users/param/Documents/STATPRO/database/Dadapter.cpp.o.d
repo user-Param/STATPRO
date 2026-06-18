@@ -1,6 +1,6 @@
-CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o: \
-  /Users/param/Documents/Stashpro/database/Dadapter.cpp \
-  /Users/param/Documents/Stashpro/database/Dadapter.h \
+CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o: \
+  /Users/param/Documents/STATPRO/database/Dadapter.cpp \
+  /Users/param/Documents/STATPRO/database/Dadapter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

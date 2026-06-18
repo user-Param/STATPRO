@@ -1,1 +1,5 @@
-./start.sh: line 50: ./engine: No such file or directory
+--- Starting STATPRO Engine ---
+[RiskManager] ✓ Connected to Executor at localhost:9001
+[Main] Loading C++ StatArb Strategy...
+[AlgoManager] Added hardcoded strategy: strategy_0
+[Engine] Initializing with 148 eligible tokens.

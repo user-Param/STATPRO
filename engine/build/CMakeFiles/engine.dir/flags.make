@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_DATE_TIME_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB
 
-CXX_INCLUDES = -I/Users/param/Documents/Stashpro/engine/include -I/Users/param/Documents/Stashpro/engine -isystem /opt/homebrew/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.2/include -isystem /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -isystem /opt/homebrew/lib/python3.14/site-packages/pybind11/include
+CXX_INCLUDES = -I/Users/param/Documents/STATPRO/engine/include -I/Users/param/Documents/STATPRO/engine -isystem /opt/homebrew/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.2/include -isystem /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -isystem /opt/homebrew/Cellar/pybind11/3.0.4/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

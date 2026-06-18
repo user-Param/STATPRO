@@ -1,4 +1,4 @@
-/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles/datafeed.dir
-/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles/dadapter.dir
-/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles/edit_cache.dir
-/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles/rebuild_cache.dir
+/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles/datafeed.dir
+/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles/dadapter.dir
+/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles/edit_cache.dir
+/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles/rebuild_cache.dir

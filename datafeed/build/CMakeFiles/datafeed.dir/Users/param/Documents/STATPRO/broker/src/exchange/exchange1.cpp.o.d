@@ -1,6 +1,6 @@
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o: \
-  /Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange1.h \
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o: \
+  /Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange1.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

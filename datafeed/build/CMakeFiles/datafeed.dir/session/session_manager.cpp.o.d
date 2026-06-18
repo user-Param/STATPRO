@@ -1,6 +1,6 @@
 CMakeFiles/datafeed.dir/session/session_manager.cpp.o: \
-  /Users/param/Documents/Stashpro/datafeed/session/session_manager.cpp \
-  /Users/param/Documents/Stashpro/datafeed/session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/session/session_manager.cpp \
+  /Users/param/Documents/STATPRO/datafeed/session/session_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -778,7 +778,7 @@ CMakeFiles/datafeed.dir/session/session_manager.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Users/param/Documents/Stashpro/datafeed/session/../server/server.h \
+  /Users/param/Documents/STATPRO/datafeed/session/../server/server.h \
   /opt/homebrew/include/boost/beast/core.hpp \
   /opt/homebrew/include/boost/beast/core/detail/config.hpp \
   /opt/homebrew/include/boost/config.hpp \
@@ -1807,5 +1807,5 @@ CMakeFiles/datafeed.dir/session/session_manager.cpp.o: \
   /opt/homebrew/include/boost/asio/detail/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.ipp \
-  /Users/param/Documents/Stashpro/datafeed/session/../server/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/session/../server/../session/session_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

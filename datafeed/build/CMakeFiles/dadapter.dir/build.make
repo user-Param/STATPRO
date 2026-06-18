@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/param/Documents/Stashpro/datafeed
+CMAKE_SOURCE_DIR = /Users/param/Documents/STATPRO/datafeed
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/param/Documents/Stashpro/datafeed/build
+CMAKE_BINARY_DIR = /Users/param/Documents/STATPRO/datafeed/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dadapter.dir/depend.make
@@ -72,28 +72,28 @@ include CMakeFiles/dadapter.dir/flags.make
 CMakeFiles/dadapter.dir/codegen:
 .PHONY : CMakeFiles/dadapter.dir/codegen
 
-CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o: CMakeFiles/dadapter.dir/flags.make
-CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o: /Users/param/Documents/Stashpro/database/Dadapter.cpp
-CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o: CMakeFiles/dadapter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o -MF CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o.d -o CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o -c /Users/param/Documents/Stashpro/database/Dadapter.cpp
+CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o: CMakeFiles/dadapter.dir/flags.make
+CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o: /Users/param/Documents/STATPRO/database/Dadapter.cpp
+CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o: CMakeFiles/dadapter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o -MF CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o.d -o CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o -c /Users/param/Documents/STATPRO/database/Dadapter.cpp
 
-CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/database/Dadapter.cpp > CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.i
+CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/database/Dadapter.cpp > CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.i
 
-CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/database/Dadapter.cpp -o CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.s
+CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/database/Dadapter.cpp -o CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.s
 
 # Object files for target dadapter
 dadapter_OBJECTS = \
-"CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o"
+"CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o"
 
 # External object files for target dadapter
 dadapter_EXTERNAL_OBJECTS =
 
-dadapter: CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o
+dadapter: CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o
 dadapter: CMakeFiles/dadapter.dir/build.make
 dadapter: /opt/homebrew/lib/libboost_thread.dylib
 dadapter: /opt/homebrew/lib/libboost_chrono.dylib
@@ -105,7 +105,7 @@ dadapter: /opt/homebrew/lib/libpqxx.dylib
 dadapter: /opt/homebrew/lib/postgresql@14/libpq.dylib
 dadapter: /opt/homebrew/lib/libboost_container.dylib
 dadapter: CMakeFiles/dadapter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dadapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dadapter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dadapter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -117,6 +117,6 @@ CMakeFiles/dadapter.dir/clean:
 .PHONY : CMakeFiles/dadapter.dir/clean
 
 CMakeFiles/dadapter.dir/depend:
-	cd /Users/param/Documents/Stashpro/datafeed/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/param/Documents/Stashpro/datafeed /Users/param/Documents/Stashpro/datafeed /Users/param/Documents/Stashpro/datafeed/build /Users/param/Documents/Stashpro/datafeed/build /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles/dadapter.dir/DependInfo.cmake "--color=$(COLOR)" dadapter
+	cd /Users/param/Documents/STATPRO/datafeed/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/param/Documents/STATPRO/datafeed /Users/param/Documents/STATPRO/datafeed /Users/param/Documents/STATPRO/datafeed/build /Users/param/Documents/STATPRO/datafeed/build /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles/dadapter.dir/DependInfo.cmake "--color=$(COLOR)" dadapter
 .PHONY : CMakeFiles/dadapter.dir/depend
 

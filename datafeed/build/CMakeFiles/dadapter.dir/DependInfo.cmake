@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/param/Documents/Stashpro/database/Dadapter.cpp" "CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o" "gcc" "CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o.d"
+  "/Users/param/Documents/STATPRO/database/Dadapter.cpp" "CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o" "gcc" "CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

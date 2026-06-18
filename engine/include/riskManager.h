@@ -22,7 +22,7 @@ public:
 
     // Validate and send order to Executor
     bool validateAndSend(const std::string& symbol, double price, int quantity, 
-                         const std::string& side, const std::string& strategy_id = "default");
+                         const std::string& side, const std::string& strategy_id = "default", int leverage = 1);
 
 private:
     void connectExecutor();

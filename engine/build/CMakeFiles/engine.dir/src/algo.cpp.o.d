@@ -1,7 +1,7 @@
 CMakeFiles/engine.dir/src/algo.cpp.o: \
-  /Users/param/Documents/Stashpro/engine/src/algo.cpp \
-  /Users/param/Documents/Stashpro/engine/src/../include/algo.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/marketData.h \
+  /Users/param/Documents/STATPRO/engine/src/algo.cpp \
+  /Users/param/Documents/STATPRO/engine/src/../include/algo.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/marketData.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -663,7 +663,7 @@ CMakeFiles/engine.dir/src/algo.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sample.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
-  /Users/param/Documents/Stashpro/engine/src/../include/algoManager.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/algoManager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/comparison.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h \
@@ -812,7 +812,7 @@ CMakeFiles/engine.dir/src/algo.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/param/Documents/Stashpro/engine/src/../include/riskManager.h \
+  /Users/param/Documents/STATPRO/engine/src/../include/riskManager.h \
   /opt/homebrew/include/boost/beast/core.hpp \
   /opt/homebrew/include/boost/beast/core/detail/config.hpp \
   /opt/homebrew/include/boost/config.hpp \

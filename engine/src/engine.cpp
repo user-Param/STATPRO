@@ -7,6 +7,10 @@
 #include <algorithm>
 #include <numeric>
 
+const std::set<std::string> Engine::ELIGIBLE_TOKENS = {
+    "ETH", "USDT", "USDC", "XRP", "TRX", "DOGE", "ZEC", "ADA", "LINK", "BCH", "DAI", "TON", "USD1", "USDe", "M", "LTC", "AVAX", "SHIB", "XAUt", "WLFI", "H", "DOT", "UNI", "ASTER", "DEXE", "USDD", "ETC", "AAVE", "ATOM", "U", "STABLE", "FIL", "INJ", "币安人生", "NIGHT", "FET", "TUSD", "BONK", "PENGU", "CAKE", "SIREN", "LUNC", "ZRO", "KITE", "FDUSD", "BEAT", "PIEVERSE", "BTT", "NFT", "EDGE", "FLOKI", "LDO", "B", "FF", "PENDLE", "NEX", "STG", "AXS", "TWT", "HOME", "RAY", "COMP", "GWEI", "XCN", "GENIUS", "XPL", "BAT", "SKYAI", "APE", "IP", "SFP", "TAG", "NXPC", "AB", "SAHARA", "1INCH", "CHEEMS", "BANANAS31", "RIVER", "MYX", "RAVE", "SNX", "FORM", "LAB", "HTX", "USDf", "CTM", "BDX", "SLX", "UB", "DUCKY", "FRAX", "BILL", "WFI", "KOGE", "ALE", "FRXUSD", "USDF", "GOMINING", "VCNT", "GUA", "DUSD", "SMILEK", "0G", "BEAM", "MY", "SOON", "REAL", "Q", "AIOZ", "ZIG", "YFI", "TAC", "lisUSD", "CYS", "ZAMA", "TRIA", "HUMA", "PLUME", "ZIL", "XPR", "ZETA", "BabyDoge", "NILA", "ROSE", "VELO", "UAI", "BRETT", "OPEN", "BSB", "TOSHI", "BAS", "ACH", "AXL", "LUR", "ELF", "KAVA", "APR", "IRYS", "EURI", "XUSD", "BARD", "DUSK", "SUSHI", "PEAQ", "COAI", "BDCA", "XAUM"
+};
+
 Engine::Engine(std::shared_ptr<AlgoManager> algoMgr)
     : algoManager_(std::move(algoMgr)), ws_{ioc_} {}
 
@@ -17,23 +21,25 @@ Engine::~Engine()
 
 void Engine::start()
 {
-    std::cout << "Engine started" << std::endl;
+    std::cout << "[Engine] Initializing with " << ELIGIBLE_TOKENS.size() << " eligible tokens." << std::endl;
     
-    std::vector<std::string> initialTopics = topics_;
-    bool hasPrice = false;
-    for(const auto& t : initialTopics) if(t == "backtest_price_") hasPrice = true;
+    std::vector<std::string> initialTopics;
+    for (const auto& token : ELIGIBLE_TOKENS) {
+        initialTopics.push_back("ticker_" + token);
+    }
     
-    if(!hasPrice) {
+    if (is_backtesting_) {
         initialTopics.push_back("backtest_price_");
         initialTopics.push_back("backtest_bid_");
         initialTopics.push_back("backtest_ask_");
         initialTopics.push_back("backtest_complete");
     }
 
-    algoManager_->setOrderCallback([this](const std::string& symbol, double price, int quantity, const std::string& side, const std::string& strategy_id) {
+    algoManager_->setOrderCallback([this](const std::string& symbol, double price, int quantity, const std::string& side, const std::string& strategy_id, int leverage) {
         if (is_backtesting_) {
             bt_trades_.push_back({symbol, side, price, quantity, (long)std::time(nullptr)});
-            if (side == "BUY") bt_equity_ -= (price * quantity);
+            // Basic equity tracking (doesn't account for leverage/margin in this simplified view)
+            if (side == "BUY" || side == "LONG") bt_equity_ -= (price * quantity);
             else bt_equity_ += (price * quantity);
             if (bt_equity_ > bt_max_equity_) bt_max_equity_ = bt_equity_;
             double dd = (bt_max_equity_ - bt_equity_) / bt_max_equity_;
@@ -113,9 +119,11 @@ void Engine::readLoop()
 
 void Engine::onData(const std::string &raw)
 {
+    std::cerr << "[Engine] Incoming: " << raw << std::endl;
     try
     {
         auto j = nlohmann::json::parse(raw);
+
         
         // Handle Mode Switching
         if (j.contains("mode")) {
@@ -148,10 +156,21 @@ void Engine::onData(const std::string &raw)
             finalizeBacktest();
             return;
         }
+
+        std::string symbol = j.value("symbol", "");
+        if (symbol.empty() && j.contains("topic")) {
+            std::string topic = j["topic"];
+            if (topic.find("ticker_") == 0) symbol = topic.substr(7);
+        }
+
+        // 149 Tokens Filter: Drop if not in list
+        if (!symbol.empty() && ELIGIBLE_TOKENS.find(symbol) == ELIGIBLE_TOKENS.end()) {
+            return;
+        }
         
         if (j.contains("topic") && j["topic"].get<std::string>().find("backtest_") != std::string::npos) {
             MarketData data;
-            data.symbol = j["symbol"];
+            data.symbol = symbol;
             data.price = j["price"];
             data.bid = j["bid"];
             data.ask = j["ask"];
@@ -165,7 +184,7 @@ void Engine::onData(const std::string &raw)
         }
         
         MarketData data;
-        data.symbol = j["symbol"];
+        data.symbol = symbol;
         data.price = j["price"];
         data.bid = j.value("bid", data.price - 0.01);
         data.ask = j.value("ask", data.price + 0.01);

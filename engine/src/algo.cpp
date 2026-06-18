@@ -19,3 +19,37 @@ bool Algo::sell(const std::string& symbol, double price, int quantity) {
     std::cerr << "[Algo] Error: Manager not set for sell order!" << std::endl;
     return false;
 }
+
+bool Algo::openLong(const std::string& symbol, double price, int quantity, int leverage) {
+    if (manager_) {
+        std::cout << "[Algo] Open Long: " << symbol << " @ " << price << " (Leverage: " << leverage << "x)" << std::endl;
+        return manager_->sendOrder(symbol, price, quantity, "LONG", "default", leverage);
+    }
+    return false;
+}
+
+bool Algo::openShort(const std::string& symbol, double price, int quantity, int leverage) {
+    if (manager_) {
+        std::cout << "[Algo] Open Short: " << symbol << " @ " << price << " (Leverage: " << leverage << "x)" << std::endl;
+        return manager_->sendOrder(symbol, price, quantity, "SHORT", "default", leverage);
+    }
+    return false;
+}
+
+bool Algo::closePosition(const std::string& symbol, double price, int quantity) {
+    if (manager_) {
+        std::cout << "[Algo] Close Position: " << symbol << " @ " << price << std::endl;
+        return manager_->sendOrder(symbol, price, quantity, "CLOSE");
+    }
+    return false;
+}
+
+double Algo::getCorrelation(const std::string& symbol1, const std::string& symbol2) const {
+    if (manager_) return manager_->getCorrelation(symbol1, symbol2);
+    return 0.0;
+}
+
+double Algo::getCurrentPrice(const std::string& symbol) const {
+    if (manager_) return manager_->getCurrentPrice(symbol);
+    return 0.0;
+}

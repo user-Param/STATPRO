@@ -1,0 +1,4 @@
+[WebSocket] Connected to server at localhost:9000
+[PostgreSQL] Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "statpro" does not exist
+
+Exiting due to database connection failure.

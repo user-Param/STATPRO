@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/param/Documents/Stashpro/engine
+CMAKE_SOURCE_DIR = /Users/param/Documents/STATPRO/engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/param/Documents/Stashpro/engine/build
+CMAKE_BINARY_DIR = /Users/param/Documents/STATPRO/engine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/engine.dir/depend.make
@@ -73,88 +73,88 @@ CMakeFiles/engine.dir/codegen:
 .PHONY : CMakeFiles/engine.dir/codegen
 
 CMakeFiles/engine.dir/src/main.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/main.cpp.o: /Users/param/Documents/Stashpro/engine/src/main.cpp
+CMakeFiles/engine.dir/src/main.cpp.o: /Users/param/Documents/STATPRO/engine/src/main.cpp
 CMakeFiles/engine.dir/src/main.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/main.cpp.o -MF CMakeFiles/engine.dir/src/main.cpp.o.d -o CMakeFiles/engine.dir/src/main.cpp.o -c /Users/param/Documents/Stashpro/engine/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/main.cpp.o -MF CMakeFiles/engine.dir/src/main.cpp.o.d -o CMakeFiles/engine.dir/src/main.cpp.o -c /Users/param/Documents/STATPRO/engine/src/main.cpp
 
 CMakeFiles/engine.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/engine/src/main.cpp > CMakeFiles/engine.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/engine/src/main.cpp > CMakeFiles/engine.dir/src/main.cpp.i
 
 CMakeFiles/engine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/engine/src/main.cpp -o CMakeFiles/engine.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/engine/src/main.cpp -o CMakeFiles/engine.dir/src/main.cpp.s
 
 CMakeFiles/engine.dir/src/engine.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/engine.cpp.o: /Users/param/Documents/Stashpro/engine/src/engine.cpp
+CMakeFiles/engine.dir/src/engine.cpp.o: /Users/param/Documents/STATPRO/engine/src/engine.cpp
 CMakeFiles/engine.dir/src/engine.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/src/engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/engine.cpp.o -MF CMakeFiles/engine.dir/src/engine.cpp.o.d -o CMakeFiles/engine.dir/src/engine.cpp.o -c /Users/param/Documents/Stashpro/engine/src/engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/src/engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/engine.cpp.o -MF CMakeFiles/engine.dir/src/engine.cpp.o.d -o CMakeFiles/engine.dir/src/engine.cpp.o -c /Users/param/Documents/STATPRO/engine/src/engine.cpp
 
 CMakeFiles/engine.dir/src/engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/engine/src/engine.cpp > CMakeFiles/engine.dir/src/engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/engine/src/engine.cpp > CMakeFiles/engine.dir/src/engine.cpp.i
 
 CMakeFiles/engine.dir/src/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/engine/src/engine.cpp -o CMakeFiles/engine.dir/src/engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/engine/src/engine.cpp -o CMakeFiles/engine.dir/src/engine.cpp.s
 
 CMakeFiles/engine.dir/src/algo.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/algo.cpp.o: /Users/param/Documents/Stashpro/engine/src/algo.cpp
+CMakeFiles/engine.dir/src/algo.cpp.o: /Users/param/Documents/STATPRO/engine/src/algo.cpp
 CMakeFiles/engine.dir/src/algo.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/src/algo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/algo.cpp.o -MF CMakeFiles/engine.dir/src/algo.cpp.o.d -o CMakeFiles/engine.dir/src/algo.cpp.o -c /Users/param/Documents/Stashpro/engine/src/algo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/src/algo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/algo.cpp.o -MF CMakeFiles/engine.dir/src/algo.cpp.o.d -o CMakeFiles/engine.dir/src/algo.cpp.o -c /Users/param/Documents/STATPRO/engine/src/algo.cpp
 
 CMakeFiles/engine.dir/src/algo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/algo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/engine/src/algo.cpp > CMakeFiles/engine.dir/src/algo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/engine/src/algo.cpp > CMakeFiles/engine.dir/src/algo.cpp.i
 
 CMakeFiles/engine.dir/src/algo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/algo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/engine/src/algo.cpp -o CMakeFiles/engine.dir/src/algo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/engine/src/algo.cpp -o CMakeFiles/engine.dir/src/algo.cpp.s
 
 CMakeFiles/engine.dir/src/algoManager.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/algoManager.cpp.o: /Users/param/Documents/Stashpro/engine/src/algoManager.cpp
+CMakeFiles/engine.dir/src/algoManager.cpp.o: /Users/param/Documents/STATPRO/engine/src/algoManager.cpp
 CMakeFiles/engine.dir/src/algoManager.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/src/algoManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/algoManager.cpp.o -MF CMakeFiles/engine.dir/src/algoManager.cpp.o.d -o CMakeFiles/engine.dir/src/algoManager.cpp.o -c /Users/param/Documents/Stashpro/engine/src/algoManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/src/algoManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/algoManager.cpp.o -MF CMakeFiles/engine.dir/src/algoManager.cpp.o.d -o CMakeFiles/engine.dir/src/algoManager.cpp.o -c /Users/param/Documents/STATPRO/engine/src/algoManager.cpp
 
 CMakeFiles/engine.dir/src/algoManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/algoManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/engine/src/algoManager.cpp > CMakeFiles/engine.dir/src/algoManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/engine/src/algoManager.cpp > CMakeFiles/engine.dir/src/algoManager.cpp.i
 
 CMakeFiles/engine.dir/src/algoManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/algoManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/engine/src/algoManager.cpp -o CMakeFiles/engine.dir/src/algoManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/engine/src/algoManager.cpp -o CMakeFiles/engine.dir/src/algoManager.cpp.s
 
 CMakeFiles/engine.dir/src/riskManager.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/riskManager.cpp.o: /Users/param/Documents/Stashpro/engine/src/riskManager.cpp
+CMakeFiles/engine.dir/src/riskManager.cpp.o: /Users/param/Documents/STATPRO/engine/src/riskManager.cpp
 CMakeFiles/engine.dir/src/riskManager.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/src/riskManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/riskManager.cpp.o -MF CMakeFiles/engine.dir/src/riskManager.cpp.o.d -o CMakeFiles/engine.dir/src/riskManager.cpp.o -c /Users/param/Documents/Stashpro/engine/src/riskManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/src/riskManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/riskManager.cpp.o -MF CMakeFiles/engine.dir/src/riskManager.cpp.o.d -o CMakeFiles/engine.dir/src/riskManager.cpp.o -c /Users/param/Documents/STATPRO/engine/src/riskManager.cpp
 
 CMakeFiles/engine.dir/src/riskManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/riskManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/engine/src/riskManager.cpp > CMakeFiles/engine.dir/src/riskManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/engine/src/riskManager.cpp > CMakeFiles/engine.dir/src/riskManager.cpp.i
 
 CMakeFiles/engine.dir/src/riskManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/riskManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/engine/src/riskManager.cpp -o CMakeFiles/engine.dir/src/riskManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/engine/src/riskManager.cpp -o CMakeFiles/engine.dir/src/riskManager.cpp.s
 
 CMakeFiles/engine.dir/src/python_bindings.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/python_bindings.cpp.o: /Users/param/Documents/Stashpro/engine/src/python_bindings.cpp
+CMakeFiles/engine.dir/src/python_bindings.cpp.o: /Users/param/Documents/STATPRO/engine/src/python_bindings.cpp
 CMakeFiles/engine.dir/src/python_bindings.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/src/python_bindings.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/python_bindings.cpp.o -MF CMakeFiles/engine.dir/src/python_bindings.cpp.o.d -o CMakeFiles/engine.dir/src/python_bindings.cpp.o -c /Users/param/Documents/Stashpro/engine/src/python_bindings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/src/python_bindings.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/python_bindings.cpp.o -MF CMakeFiles/engine.dir/src/python_bindings.cpp.o.d -o CMakeFiles/engine.dir/src/python_bindings.cpp.o -c /Users/param/Documents/STATPRO/engine/src/python_bindings.cpp
 
 CMakeFiles/engine.dir/src/python_bindings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/python_bindings.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/engine/src/python_bindings.cpp > CMakeFiles/engine.dir/src/python_bindings.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/engine/src/python_bindings.cpp > CMakeFiles/engine.dir/src/python_bindings.cpp.i
 
 CMakeFiles/engine.dir/src/python_bindings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/python_bindings.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/engine/src/python_bindings.cpp -o CMakeFiles/engine.dir/src/python_bindings.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/engine/src/python_bindings.cpp -o CMakeFiles/engine.dir/src/python_bindings.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
@@ -184,7 +184,7 @@ engine: /opt/homebrew/Cellar/openssl@3/3.6.2/lib/libcrypto.dylib
 engine: /opt/homebrew/lib/libboost_container.dylib
 engine: /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/lib/libpython3.14.dylib
 engine: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -196,6 +196,6 @@ CMakeFiles/engine.dir/clean:
 .PHONY : CMakeFiles/engine.dir/clean
 
 CMakeFiles/engine.dir/depend:
-	cd /Users/param/Documents/Stashpro/engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/param/Documents/Stashpro/engine /Users/param/Documents/Stashpro/engine /Users/param/Documents/Stashpro/engine/build /Users/param/Documents/Stashpro/engine/build /Users/param/Documents/Stashpro/engine/build/CMakeFiles/engine.dir/DependInfo.cmake "--color=$(COLOR)" engine
+	cd /Users/param/Documents/STATPRO/engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/param/Documents/STATPRO/engine /Users/param/Documents/STATPRO/engine /Users/param/Documents/STATPRO/engine/build /Users/param/Documents/STATPRO/engine/build /Users/param/Documents/STATPRO/engine/build/CMakeFiles/engine.dir/DependInfo.cmake "--color=$(COLOR)" engine
 .PHONY : CMakeFiles/engine.dir/depend
 

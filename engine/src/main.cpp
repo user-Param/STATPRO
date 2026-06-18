@@ -8,6 +8,7 @@
 #include "../include/riskManager.h"
 #include "../include/algo.h"
 #include "../include/engine.h"
+#include "../algos/strategy_1.cpp"
 
 namespace py = pybind11;
 
@@ -23,12 +24,16 @@ int main(int argc, char** argv)
         // 2. Initialize AlgoManager
         auto algoMgr = std::make_shared<AlgoManager>(riskMgr);
         
-        // 3. Load Python strategies
+        // 3. Load C++ StatArb Strategy
+        std::cout << "[Main] Loading C++ StatArb Strategy..." << std::endl;
+        algoMgr->addAlgo(std::make_unique<StatArbStrategy>());
+
+        // 4. Load Python strategies
         algoMgr->loadStrategies("../algos");
 
-        // 4. Initialize Engine (Connects to Datafeed on 9000)
+        // 5. Initialize Engine (Connects to Datafeed on 9000)
         Engine engine(algoMgr);
-        engine.setTopics({"ticker_"});
+        // Topics are now handled internally by Engine::start() using ELIGIBLE_TOKENS
         engine.start();
 
         std::this_thread::sleep_for(std::chrono::seconds(1));

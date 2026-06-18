@@ -54,10 +54,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/param/Documents/Stashpro/datafeed
+CMAKE_SOURCE_DIR = /Users/param/Documents/STATPRO/datafeed
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/param/Documents/Stashpro/datafeed/build
+CMAKE_BINARY_DIR = /Users/param/Documents/STATPRO/datafeed/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -88,14 +88,14 @@ clean: CMakeFiles/dadapter.dir/clean
 CMakeFiles/datafeed.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target datafeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target datafeed"
 .PHONY : CMakeFiles/datafeed.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/datafeed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/datafeed.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles 0
 .PHONY : CMakeFiles/datafeed.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ datafeed: CMakeFiles/datafeed.dir/rule
 # codegen rule for target.
 CMakeFiles/datafeed.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/datafeed.dir/build.make CMakeFiles/datafeed.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target datafeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target datafeed"
 .PHONY : CMakeFiles/datafeed.dir/codegen
 
 # clean rule for target.
@@ -120,14 +120,14 @@ CMakeFiles/datafeed.dir/clean:
 CMakeFiles/dadapter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=1,2 "Built target dadapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=1,2 "Built target dadapter"
 .PHONY : CMakeFiles/dadapter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dadapter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dadapter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles 0
 .PHONY : CMakeFiles/dadapter.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ dadapter: CMakeFiles/dadapter.dir/rule
 # codegen rule for target.
 CMakeFiles/dadapter.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dadapter.dir/build.make CMakeFiles/dadapter.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=1,2 "Finished codegen for target dadapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=1,2 "Finished codegen for target dadapter"
 .PHONY : CMakeFiles/dadapter.dir/codegen
 
 # clean rule for target.

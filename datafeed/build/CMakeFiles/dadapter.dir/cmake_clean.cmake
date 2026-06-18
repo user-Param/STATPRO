@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o"
-  "CMakeFiles/dadapter.dir/Users/param/Documents/Stashpro/database/Dadapter.cpp.o.d"
+  "CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o"
+  "CMakeFiles/dadapter.dir/Users/param/Documents/STATPRO/database/Dadapter.cpp.o.d"
   "dadapter"
   "dadapter.pdb"
 )

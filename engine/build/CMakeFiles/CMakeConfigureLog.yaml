@@ -26,6 +26,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -41,6 +42,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/uname"
       - "/Users/param/.antigravity/antigravity/bin/uname"
@@ -48,6 +50,7 @@ events:
       - "/Users/param/.local/bin/uname"
       - "/Users/param/.opencode/bin/uname"
       - "/opt/homebrew/opt/make/libexec/gnubin/uname"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/uname"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/opt/homebrew/bin/uname"
@@ -63,6 +66,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -78,6 +82,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -86,6 +91,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -120,6 +126,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -135,6 +142,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/gmake"
       - "/Users/param/.antigravity/antigravity/bin/gmake"
@@ -142,6 +150,7 @@ events:
       - "/Users/param/.local/bin/gmake"
       - "/Users/param/.opencode/bin/gmake"
       - "/opt/homebrew/opt/make/libexec/gnubin/gmake"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/gmake"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
     found: "/opt/homebrew/bin/gmake"
@@ -153,6 +162,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -168,6 +178,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -176,6 +187,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -208,6 +220,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -223,6 +236,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/cc"
       - "/Users/param/.antigravity/antigravity/bin/cc"
@@ -230,6 +244,7 @@ events:
       - "/Users/param/.local/bin/cc"
       - "/Users/param/.opencode/bin/cc"
       - "/opt/homebrew/opt/make/libexec/gnubin/cc"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/cc"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/cc"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/cc"
       - "/opt/homebrew/bin/cc"
@@ -245,6 +260,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -260,6 +276,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -268,6 +285,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -301,6 +319,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -316,6 +335,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -324,6 +344,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -344,7 +365,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is AppleClang, found in:
-        /Users/param/Documents/Stashpro/engine/build/CMakeFiles/4.2.3/CompilerIdC/a.out
+        /Users/param/Documents/STATPRO/engine/build/CMakeFiles/4.2.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -414,6 +435,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -428,6 +450,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
@@ -437,6 +460,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -452,6 +476,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -460,6 +485,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -487,6 +513,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -501,6 +528,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
@@ -510,6 +538,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -525,6 +554,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -533,6 +563,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -560,6 +591,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -574,6 +606,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
@@ -583,6 +616,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -598,6 +632,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -606,6 +641,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -633,6 +669,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -647,6 +684,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
@@ -656,6 +694,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -671,6 +710,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -679,6 +719,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -706,6 +747,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -720,6 +762,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
@@ -729,6 +772,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -744,6 +788,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -752,6 +797,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -779,6 +825,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -793,6 +840,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
@@ -802,6 +850,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -817,6 +866,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -825,6 +875,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -852,6 +903,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -866,6 +918,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/usr/bin/objcopy"
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/objcopy"
@@ -874,6 +927,7 @@ events:
       - "/Users/param/.local/bin/objcopy"
       - "/Users/param/.opencode/bin/objcopy"
       - "/opt/homebrew/opt/make/libexec/gnubin/objcopy"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/objcopy"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/objcopy"
       - "/opt/homebrew/bin/objcopy"
@@ -888,6 +942,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
       - "/opt/anaconda3/bin/objcopy"
       - "/opt/anaconda3/condabin/objcopy"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/objcopy"
     found: false
     search_context:
       ENV{PATH}:
@@ -897,6 +952,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -912,6 +968,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -920,6 +977,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -947,6 +1005,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -961,6 +1020,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/usr/bin/readelf"
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/readelf"
@@ -969,6 +1029,7 @@ events:
       - "/Users/param/.local/bin/readelf"
       - "/Users/param/.opencode/bin/readelf"
       - "/opt/homebrew/opt/make/libexec/gnubin/readelf"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/readelf"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/readelf"
       - "/opt/homebrew/bin/readelf"
@@ -983,6 +1044,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
       - "/opt/anaconda3/bin/readelf"
       - "/opt/anaconda3/condabin/readelf"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/readelf"
     found: false
     search_context:
       ENV{PATH}:
@@ -992,6 +1054,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1007,6 +1070,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1015,6 +1079,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1042,6 +1107,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1056,6 +1122,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/dlltool"
@@ -1064,6 +1131,7 @@ events:
       - "/Users/param/.local/bin/dlltool"
       - "/Users/param/.opencode/bin/dlltool"
       - "/opt/homebrew/opt/make/libexec/gnubin/dlltool"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/dlltool"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/opt/homebrew/bin/dlltool"
@@ -1078,6 +1146,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
       - "/opt/anaconda3/bin/dlltool"
       - "/opt/anaconda3/condabin/dlltool"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -1087,6 +1156,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1102,6 +1172,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1110,6 +1181,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1137,6 +1209,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1151,6 +1224,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/usr/bin/addr2line"
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/addr2line"
@@ -1159,6 +1233,7 @@ events:
       - "/Users/param/.local/bin/addr2line"
       - "/Users/param/.opencode/bin/addr2line"
       - "/opt/homebrew/opt/make/libexec/gnubin/addr2line"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/addr2line"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/addr2line"
       - "/opt/homebrew/bin/addr2line"
@@ -1173,6 +1248,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
       - "/opt/anaconda3/bin/addr2line"
       - "/opt/anaconda3/condabin/addr2line"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/addr2line"
     found: false
     search_context:
       ENV{PATH}:
@@ -1182,6 +1258,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1197,6 +1274,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1205,6 +1283,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1232,6 +1311,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1246,6 +1326,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/tapi"
@@ -1254,6 +1335,7 @@ events:
       - "/Users/param/.local/bin/tapi"
       - "/Users/param/.opencode/bin/tapi"
       - "/opt/homebrew/opt/make/libexec/gnubin/tapi"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/tapi"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/opt/homebrew/bin/tapi"
@@ -1268,6 +1350,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
       - "/opt/anaconda3/bin/tapi"
       - "/opt/anaconda3/condabin/tapi"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -1277,6 +1360,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1292,6 +1376,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1300,6 +1385,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1336,6 +1422,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1351,6 +1438,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1359,6 +1447,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1392,6 +1481,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1407,6 +1497,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1415,6 +1506,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1435,7 +1527,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is AppleClang, found in:
-        /Users/param/Documents/Stashpro/engine/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out
+        /Users/param/Documents/STATPRO/engine/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
@@ -1504,6 +1596,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -1519,6 +1612,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
     searched_directories:
       - "/Users/param/.nvm/versions/node/v20.20.2/bin/install_name_tool"
       - "/Users/param/.antigravity/antigravity/bin/install_name_tool"
@@ -1526,6 +1620,7 @@ events:
       - "/Users/param/.local/bin/install_name_tool"
       - "/Users/param/.opencode/bin/install_name_tool"
       - "/opt/homebrew/opt/make/libexec/gnubin/install_name_tool"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/install_name_tool"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/install_name_tool"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
@@ -1541,6 +1636,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -1556,6 +1652,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -1564,6 +1661,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
@@ -1574,8 +1672,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0"
-      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0"
+      source: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD"
+      binary: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1587,19 +1685,19 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0'
+        Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_67570/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_67570.dir/build.make CMakeFiles/cmTC_67570.dir/build
-        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0'
-        Building C object CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_cabf8/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_cabf8.dir/build.make CMakeFiles/cmTC_cabf8.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD'
+        Building C object CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 17.0.0 (clang-1700.6.3.2)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0 -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 17.0.0 (clang-1700.6.3.2) default target arm64-apple-darwin24.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -1612,13 +1710,13 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_67570
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67570.dir/link.txt --verbose=1
+        Linking C executable cmTC_cabf8
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cabf8.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.6.3.2)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_67570 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_cabf8 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1230.1
         BUILD 06:36:05 Dec  2 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1631,8 +1729,8 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -o cmTC_67570
-        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0'
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -o cmTC_cabf8
+        gmake[1]: Leaving directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD'
         
       exitCode: 0
   -
@@ -1676,19 +1774,19 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0']
+        ignore line: [Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_67570/fast]
-        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_67570.dir/build.make CMakeFiles/cmTC_67570.dir/build]
-        ignore line: [gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0']
-        ignore line: [Building C object CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_cabf8/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_cabf8.dir/build.make CMakeFiles/cmTC_cabf8.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD']
+        ignore line: [Building C object CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 17.0.0 (clang-1700.6.3.2)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0 -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-ASBdy0 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-gn2QbD -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.6.3.2) default target arm64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -1701,13 +1799,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_67570]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67570.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_cabf8]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cabf8.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.6.3.2)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_67570 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_cabf8 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1724,12 +1822,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_67570] ==> ignore
+          arg [cmTC_cabf8] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_67570.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_cabf8.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
@@ -1772,8 +1870,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm"
-      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm"
+      source: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL"
+      binary: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1786,20 +1884,20 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm'
+        Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e4384/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e4384.dir/build.make CMakeFiles/cmTC_e4384.dir/build
-        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm'
-        Building CXX object CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_56581/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_56581.dir/build.make CMakeFiles/cmTC_56581.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL'
+        Building CXX object CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.6.3.2)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.6.3.2) default target arm64-apple-darwin24.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -1813,13 +1911,13 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_e4384
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4384.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_56581
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56581.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.6.3.2)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e4384 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_56581 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1230.1
         BUILD 06:36:05 Dec  2 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1832,8 +1930,8 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e4384
-        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm'
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_56581
+        gmake[1]: Leaving directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL'
         
       exitCode: 0
   -
@@ -1879,20 +1977,20 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm']
+        ignore line: [Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e4384/fast]
-        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e4384.dir/build.make CMakeFiles/cmTC_e4384.dir/build]
-        ignore line: [gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm']
-        ignore line: [Building CXX object CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_56581/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_56581.dir/build.make CMakeFiles/cmTC_56581.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL']
+        ignore line: [Building CXX object CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.6.3.2)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-Mut2pm -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-VXpsKL -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.6.3.2) default target arm64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -1906,13 +2004,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_e4384]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4384.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_56581]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56581.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.6.3.2)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e4384 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_56581 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1929,12 +2027,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_e4384] ==> ignore
+          arg [cmTC_56581] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_e4384.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_56581.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -2012,11 +2110,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_headersConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_headersConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_headers-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_headers-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2043,6 +2141,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2058,6 +2157,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2066,6 +2166,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2134,11 +2235,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_atomicConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_atomicConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_atomic-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_atomic-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2165,6 +2266,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2180,6 +2282,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2188,6 +2291,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2256,11 +2360,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_chronoConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_chronoConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_chrono-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_chrono-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2287,6 +2391,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2302,6 +2407,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2310,6 +2416,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2378,11 +2485,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_containerConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_containerConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_container-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_container-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2409,6 +2516,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2424,6 +2532,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2432,6 +2541,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2500,11 +2610,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_date_timeConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_date_timeConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_date_time-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_date_time-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2531,6 +2641,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2546,6 +2657,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2554,6 +2666,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2622,11 +2735,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_exceptionConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_exceptionConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_exception-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_exception-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2653,6 +2766,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2668,6 +2782,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2676,6 +2791,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2715,8 +2831,8 @@ events:
       - "/opt/homebrew/share/cmake/Modules/FindBoost.cmake:610 (find_package)"
       - "CMakeLists.txt:6 (find_package)"
     directories:
-      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-0Mutor"
-      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-0Mutor"
+      source: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rH9mwn"
+      binary: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rH9mwn"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2728,17 +2844,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-0Mutor'
+        Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rH9mwn'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_8ab72/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_8ab72.dir/build.make CMakeFiles/cmTC_8ab72.dir/build
-        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-0Mutor'
-        Building C object CMakeFiles/cmTC_8ab72.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -MD -MT CMakeFiles/cmTC_8ab72.dir/src.c.o -MF CMakeFiles/cmTC_8ab72.dir/src.c.o.d -o CMakeFiles/cmTC_8ab72.dir/src.c.o -c /Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-0Mutor/src.c
-        Linking C executable cmTC_8ab72
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ab72.dir/link.txt --verbose=1
-        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8ab72.dir/src.c.o -o cmTC_8ab72
-        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-0Mutor'
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_5d842/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_5d842.dir/build.make CMakeFiles/cmTC_5d842.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rH9mwn'
+        Building C object CMakeFiles/cmTC_5d842.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -MD -MT CMakeFiles/cmTC_5d842.dir/src.c.o -MF CMakeFiles/cmTC_5d842.dir/src.c.o.d -o CMakeFiles/cmTC_5d842.dir/src.c.o -c /Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rH9mwn/src.c
+        Linking C executable cmTC_5d842
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d842.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5d842.dir/src.c.o -o cmTC_5d842
+        gmake[1]: Leaving directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rH9mwn'
         
       exitCode: 0
   -
@@ -2784,11 +2900,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_threadConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_threadConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost_thread-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost_thread-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2815,6 +2931,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -2830,6 +2947,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -2838,6 +2956,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2918,11 +3037,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/BoostConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/BoostConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/boost-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/boost-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2971,6 +3090,14 @@ events:
         reason: "no_exist"
       -
         path: "/opt/homebrew/opt/make/libexec/gnubin/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/boost-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -3361,6 +3488,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3376,6 +3504,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -3384,6 +3513,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -3442,6 +3572,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3457,6 +3588,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -3465,6 +3597,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -3518,6 +3651,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -3533,6 +3667,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
@@ -3577,6 +3712,8 @@ events:
       - "/Users/param/.opencode/bin/pkgconf"
       - "/opt/homebrew/opt/make/libexec/gnubin/pkg-config"
       - "/opt/homebrew/opt/make/libexec/gnubin/pkgconf"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/pkg-config"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/pkgconf"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/pkg-config"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/pkgconf"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/pkg-config"
@@ -3590,6 +3727,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3605,6 +3743,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -3613,6 +3752,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -3663,6 +3803,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3678,6 +3819,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -3686,6 +3828,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -3745,6 +3888,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -3760,6 +3904,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -3768,6 +3913,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -3827,6 +3973,8 @@ events:
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/include/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/include/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/include/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/include/"
@@ -3857,6 +4005,8 @@ events:
       - "/opt/anaconda3/bin/"
       - "/opt/anaconda3/condabin/include/"
       - "/opt/anaconda3/condabin/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/include/"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/include/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
@@ -3928,6 +4078,8 @@ events:
       - "/Users/param/.opencode/bin/openssl.framework/Headers/ssl.h"
       - "/opt/homebrew/opt/make/libexec/gnubin/include/openssl.framework/Headers/ssl.h"
       - "/opt/homebrew/opt/make/libexec/gnubin/openssl.framework/Headers/ssl.h"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/include/openssl.framework/Headers/ssl.h"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/openssl.framework/Headers/ssl.h"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/include/openssl.framework/Headers/ssl.h"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/openssl.framework/Headers/ssl.h"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/include/openssl.framework/Headers/ssl.h"
@@ -3958,6 +4110,8 @@ events:
       - "/opt/anaconda3/bin/openssl.framework/Headers/ssl.h"
       - "/opt/anaconda3/condabin/include/openssl.framework/Headers/ssl.h"
       - "/opt/anaconda3/condabin/openssl.framework/Headers/ssl.h"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/include/openssl.framework/Headers/ssl.h"
+      - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin/openssl.framework/Headers/ssl.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/include/openssl.framework/Headers/ssl.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/openssl.framework/Headers/ssl.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/openssl.framework/Headers/ssl.h"
@@ -4024,6 +4178,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4039,6 +4194,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4047,6 +4203,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4101,6 +4258,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -4139,6 +4297,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4154,6 +4313,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4162,6 +4322,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4214,6 +4375,7 @@ events:
       - "/Users/param/.local/bin/"
       - "/Users/param/.opencode/bin/"
       - "/opt/homebrew/opt/make/libexec/gnubin/"
+      - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/opt/homebrew/bin/"
@@ -4252,6 +4414,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4267,6 +4430,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4275,6 +4439,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4337,11 +4502,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/nlohmann_jsonConfig.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/nlohmann_jsonConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/nlohmann_json-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/nlohmann_json-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -4393,6 +4558,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/nlohmann_jsonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/nlohmann_json-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/nlohmann_jsonConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -4428,6 +4601,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4443,6 +4617,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4451,6 +4626,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4547,6 +4723,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4562,6 +4739,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4570,6 +4748,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4632,6 +4811,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4647,6 +4827,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4655,6 +4836,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4707,6 +4889,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4722,6 +4905,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4730,6 +4914,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4786,6 +4971,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -4801,6 +4987,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -4809,6 +4996,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -4871,11 +5059,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/pybind11Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        path: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/pkgRedirects/pybind11-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -4924,6 +5112,14 @@ events:
         reason: "no_exist"
       -
         path: "/opt/homebrew/opt/make/libexec/gnubin/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/pybind11-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -5007,6 +5203,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/pybind11Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -5079,6 +5283,7 @@ events:
         - "/Users/param/.local/bin"
         - "/Users/param/.opencode/bin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/opt/homebrew/bin"
@@ -5094,6 +5299,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/param/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/param/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/Users/param/.nvm/versions/node/v20.20.2/bin"
         - "/Users/param/.antigravity/antigravity/bin"
         - "/Users/param/.cargo/bin"
@@ -5102,6 +5308,7 @@ events:
         - "/opt/anaconda3/bin"
         - "/opt/anaconda3/condabin"
         - "/opt/homebrew/opt/make/libexec/gnubin"
+        - "/Users/param/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -5136,16 +5343,16 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:372 (_pybind11_return_if_cxx_and_linker_flags_work)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Common.cmake:372 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
       - "CMakeLists.txt:16 (find_package)"
     checks:
       - "Performing Test HAS_FLTO_THIN"
     directories:
-      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst"
-      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst"
+      source: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-EobHsg"
+      binary: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-EobHsg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -5157,17 +5364,17 @@ events:
       variable: "HAS_FLTO_THIN"
       cached: true
       stdout: |
-        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst'
+        Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-EobHsg'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e408a/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e408a.dir/build.make CMakeFiles/cmTC_e408a.dir/build
-        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst'
-        Building CXX object CMakeFiles/cmTC_e408a.dir/src.cxx.o
-        /usr/bin/c++ -DHAS_FLTO_THIN  -std=gnu++17 -arch arm64   -flto -MD -MT CMakeFiles/cmTC_e408a.dir/src.cxx.o -MF CMakeFiles/cmTC_e408a.dir/src.cxx.o.d -o CMakeFiles/cmTC_e408a.dir/src.cxx.o -c /Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst/src.cxx
-        Linking CXX executable cmTC_e408a
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e408a.dir/link.txt --verbose=1
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e408a.dir/src.cxx.o -o cmTC_e408a  -flto
-        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-GjNPst'
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_976de/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_976de.dir/build.make CMakeFiles/cmTC_976de.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-EobHsg'
+        Building CXX object CMakeFiles/cmTC_976de.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_FLTO_THIN  -std=gnu++17 -arch arm64   -flto -MD -MT CMakeFiles/cmTC_976de.dir/src.cxx.o -MF CMakeFiles/cmTC_976de.dir/src.cxx.o.d -o CMakeFiles/cmTC_976de.dir/src.cxx.o -c /Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-EobHsg/src.cxx
+        Linking CXX executable cmTC_976de
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_976de.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_976de.dir/src.cxx.o -o cmTC_976de  -flto
+        gmake[1]: Leaving directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-EobHsg'
         
       exitCode: 0
   -
@@ -5176,16 +5383,16 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:382 (_pybind11_return_if_cxx_and_linker_flags_work)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
-      - "/opt/homebrew/lib/python3.14/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Common.cmake:382 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
+      - "/opt/homebrew/Cellar/pybind11/3.0.4/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
       - "CMakeLists.txt:16 (find_package)"
     checks:
       - "Performing Test HAS_FLTO"
     directories:
-      source: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO"
-      binary: "/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO"
+      source: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rlB15O"
+      binary: "/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rlB15O"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -5197,17 +5404,17 @@ events:
       variable: "HAS_FLTO"
       cached: true
       stdout: |
-        Change Dir: '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO'
+        Change Dir: '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rlB15O'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_2ba06/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_2ba06.dir/build.make CMakeFiles/cmTC_2ba06.dir/build
-        gmake[1]: Entering directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO'
-        Building CXX object CMakeFiles/cmTC_2ba06.dir/src.cxx.o
-        /usr/bin/c++ -DHAS_FLTO  -std=gnu++17 -arch arm64   -flto -MD -MT CMakeFiles/cmTC_2ba06.dir/src.cxx.o -MF CMakeFiles/cmTC_2ba06.dir/src.cxx.o.d -o CMakeFiles/cmTC_2ba06.dir/src.cxx.o -c /Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO/src.cxx
-        Linking CXX executable cmTC_2ba06
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ba06.dir/link.txt --verbose=1
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2ba06.dir/src.cxx.o -o cmTC_2ba06  -flto
-        gmake[1]: Leaving directory '/Users/param/Documents/Stashpro/engine/build/CMakeFiles/CMakeScratch/TryCompile-mzBcpO'
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_c4526/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_c4526.dir/build.make CMakeFiles/cmTC_c4526.dir/build
+        gmake[1]: Entering directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rlB15O'
+        Building CXX object CMakeFiles/cmTC_c4526.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_FLTO  -std=gnu++17 -arch arm64   -flto -MD -MT CMakeFiles/cmTC_c4526.dir/src.cxx.o -MF CMakeFiles/cmTC_c4526.dir/src.cxx.o.d -o CMakeFiles/cmTC_c4526.dir/src.cxx.o -c /Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rlB15O/src.cxx
+        Linking CXX executable cmTC_c4526
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4526.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c4526.dir/src.cxx.o -o cmTC_c4526  -flto
+        gmake[1]: Leaving directory '/Users/param/Documents/STATPRO/engine/build/CMakeFiles/CMakeScratch/TryCompile-rlB15O'
         
       exitCode: 0
 ...

@@ -1,6 +1,6 @@
 CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.cpp \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.cpp \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -662,8 +662,8 @@ CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sample.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/../market_data.h \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/../market_data.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/../session/session_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/comparison.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h \
@@ -796,7 +796,7 @@ CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/../server/server.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/../server/server.h \
   /opt/homebrew/include/boost/beast/core.hpp \
   /opt/homebrew/include/boost/beast/core/detail/config.hpp \
   /opt/homebrew/include/boost/config.hpp \
@@ -1810,7 +1810,7 @@ CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: \
   /opt/homebrew/include/boost/asio/detail/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.ipp \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/../server/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/../server/../session/session_manager.h \
   /opt/homebrew/include/nlohmann/json.hpp \
   /opt/homebrew/include/nlohmann/adl_serializer.hpp \
   /opt/homebrew/include/nlohmann/detail/abi_macros.hpp \

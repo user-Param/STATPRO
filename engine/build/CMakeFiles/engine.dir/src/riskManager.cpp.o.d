@@ -1,6 +1,6 @@
 CMakeFiles/engine.dir/src/riskManager.cpp.o: \
-  /Users/param/Documents/Stashpro/engine/src/riskManager.cpp \
-  /Users/param/Documents/Stashpro/engine/src/../include/riskManager.h \
+  /Users/param/Documents/STATPRO/engine/src/riskManager.cpp \
+  /Users/param/Documents/STATPRO/engine/src/../include/riskManager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

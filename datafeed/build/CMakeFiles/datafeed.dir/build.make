@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/param/Documents/Stashpro/datafeed
+CMAKE_SOURCE_DIR = /Users/param/Documents/STATPRO/datafeed
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/param/Documents/Stashpro/datafeed/build
+CMAKE_BINARY_DIR = /Users/param/Documents/STATPRO/datafeed/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/datafeed.dir/depend.make
@@ -73,116 +73,116 @@ CMakeFiles/datafeed.dir/codegen:
 .PHONY : CMakeFiles/datafeed.dir/codegen
 
 CMakeFiles/datafeed.dir/server/server.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/server/server.cpp.o: /Users/param/Documents/Stashpro/datafeed/server/server.cpp
+CMakeFiles/datafeed.dir/server/server.cpp.o: /Users/param/Documents/STATPRO/datafeed/server/server.cpp
 CMakeFiles/datafeed.dir/server/server.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/datafeed.dir/server/server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/server/server.cpp.o -MF CMakeFiles/datafeed.dir/server/server.cpp.o.d -o CMakeFiles/datafeed.dir/server/server.cpp.o -c /Users/param/Documents/Stashpro/datafeed/server/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/datafeed.dir/server/server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/server/server.cpp.o -MF CMakeFiles/datafeed.dir/server/server.cpp.o.d -o CMakeFiles/datafeed.dir/server/server.cpp.o -c /Users/param/Documents/STATPRO/datafeed/server/server.cpp
 
 CMakeFiles/datafeed.dir/server/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/server/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/datafeed/server/server.cpp > CMakeFiles/datafeed.dir/server/server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/datafeed/server/server.cpp > CMakeFiles/datafeed.dir/server/server.cpp.i
 
 CMakeFiles/datafeed.dir/server/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/server/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/datafeed/server/server.cpp -o CMakeFiles/datafeed.dir/server/server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/datafeed/server/server.cpp -o CMakeFiles/datafeed.dir/server/server.cpp.s
 
 CMakeFiles/datafeed.dir/session/session_manager.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/session/session_manager.cpp.o: /Users/param/Documents/Stashpro/datafeed/session/session_manager.cpp
+CMakeFiles/datafeed.dir/session/session_manager.cpp.o: /Users/param/Documents/STATPRO/datafeed/session/session_manager.cpp
 CMakeFiles/datafeed.dir/session/session_manager.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/datafeed.dir/session/session_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/session/session_manager.cpp.o -MF CMakeFiles/datafeed.dir/session/session_manager.cpp.o.d -o CMakeFiles/datafeed.dir/session/session_manager.cpp.o -c /Users/param/Documents/Stashpro/datafeed/session/session_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/datafeed.dir/session/session_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/session/session_manager.cpp.o -MF CMakeFiles/datafeed.dir/session/session_manager.cpp.o.d -o CMakeFiles/datafeed.dir/session/session_manager.cpp.o -c /Users/param/Documents/STATPRO/datafeed/session/session_manager.cpp
 
 CMakeFiles/datafeed.dir/session/session_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/session/session_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/datafeed/session/session_manager.cpp > CMakeFiles/datafeed.dir/session/session_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/datafeed/session/session_manager.cpp > CMakeFiles/datafeed.dir/session/session_manager.cpp.i
 
 CMakeFiles/datafeed.dir/session/session_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/session/session_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/datafeed/session/session_manager.cpp -o CMakeFiles/datafeed.dir/session/session_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/datafeed/session/session_manager.cpp -o CMakeFiles/datafeed.dir/session/session_manager.cpp.s
 
 CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: /Users/param/Documents/Stashpro/datafeed/live_source/live_source.cpp
+CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: /Users/param/Documents/STATPRO/datafeed/live_source/live_source.cpp
 CMakeFiles/datafeed.dir/live_source/live_source.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/datafeed.dir/live_source/live_source.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/live_source/live_source.cpp.o -MF CMakeFiles/datafeed.dir/live_source/live_source.cpp.o.d -o CMakeFiles/datafeed.dir/live_source/live_source.cpp.o -c /Users/param/Documents/Stashpro/datafeed/live_source/live_source.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/datafeed.dir/live_source/live_source.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/live_source/live_source.cpp.o -MF CMakeFiles/datafeed.dir/live_source/live_source.cpp.o.d -o CMakeFiles/datafeed.dir/live_source/live_source.cpp.o -c /Users/param/Documents/STATPRO/datafeed/live_source/live_source.cpp
 
 CMakeFiles/datafeed.dir/live_source/live_source.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/live_source/live_source.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/datafeed/live_source/live_source.cpp > CMakeFiles/datafeed.dir/live_source/live_source.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/datafeed/live_source/live_source.cpp > CMakeFiles/datafeed.dir/live_source/live_source.cpp.i
 
 CMakeFiles/datafeed.dir/live_source/live_source.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/live_source/live_source.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/datafeed/live_source/live_source.cpp -o CMakeFiles/datafeed.dir/live_source/live_source.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/datafeed/live_source/live_source.cpp -o CMakeFiles/datafeed.dir/live_source/live_source.cpp.s
 
 CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.cpp
+CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.cpp
 CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o -MF CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o.d -o CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o -c /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o -MF CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o.d -o CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o -c /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.cpp
 
 CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.cpp > CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.cpp > CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.i
 
 CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.cpp -o CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.cpp -o CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.s
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o: /Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o -c /Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o: CMakeFiles/datafeed.dir/flags.make
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o: /Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o -c /Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.i
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.i
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.s
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.s
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o: /Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o -c /Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o: CMakeFiles/datafeed.dir/flags.make
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o: /Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o -c /Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.i
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.i
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.s
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.s
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o: /Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o -c /Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o: CMakeFiles/datafeed.dir/flags.make
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o: /Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o -c /Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.i
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.i
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.s
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.s
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o: CMakeFiles/datafeed.dir/flags.make
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o: /Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o -c /Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o: CMakeFiles/datafeed.dir/flags.make
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o: /Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o: CMakeFiles/datafeed.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o -MF CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o.d -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o -c /Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.i
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp > CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.i
 
-CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.s
+CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp -o CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.s
 
 # Object files for target datafeed
 datafeed_OBJECTS = \
@@ -190,10 +190,10 @@ datafeed_OBJECTS = \
 "CMakeFiles/datafeed.dir/session/session_manager.cpp.o" \
 "CMakeFiles/datafeed.dir/live_source/live_source.cpp.o" \
 "CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o" \
-"CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o" \
-"CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o" \
-"CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o" \
-"CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o"
+"CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o" \
+"CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o" \
+"CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o" \
+"CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o"
 
 # External object files for target datafeed
 datafeed_EXTERNAL_OBJECTS =
@@ -202,10 +202,10 @@ datafeed: CMakeFiles/datafeed.dir/server/server.cpp.o
 datafeed: CMakeFiles/datafeed.dir/session/session_manager.cpp.o
 datafeed: CMakeFiles/datafeed.dir/live_source/live_source.cpp.o
 datafeed: CMakeFiles/datafeed.dir/backtest_source/backtest_source.cpp.o
-datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/adapter/eadapter.cpp.o
-datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange1.cpp.o
-datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange2.cpp.o
-datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/Stashpro/broker/src/exchange/exchange3.cpp.o
+datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/adapter/eadapter.cpp.o
+datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange1.cpp.o
+datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange2.cpp.o
+datafeed: CMakeFiles/datafeed.dir/Users/param/Documents/STATPRO/broker/src/exchange/exchange3.cpp.o
 datafeed: CMakeFiles/datafeed.dir/build.make
 datafeed: /opt/homebrew/lib/libboost_thread.dylib
 datafeed: /opt/homebrew/lib/libboost_chrono.dylib
@@ -216,7 +216,7 @@ datafeed: /opt/homebrew/Cellar/openssl@3/3.6.2/lib/libcrypto.dylib
 datafeed: /opt/homebrew/lib/postgresql@14/libpq.dylib
 datafeed: /opt/homebrew/lib/libboost_container.dylib
 datafeed: CMakeFiles/datafeed.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/param/Documents/Stashpro/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable datafeed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/param/Documents/STATPRO/datafeed/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable datafeed"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/datafeed.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -228,6 +228,6 @@ CMakeFiles/datafeed.dir/clean:
 .PHONY : CMakeFiles/datafeed.dir/clean
 
 CMakeFiles/datafeed.dir/depend:
-	cd /Users/param/Documents/Stashpro/datafeed/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/param/Documents/Stashpro/datafeed /Users/param/Documents/Stashpro/datafeed /Users/param/Documents/Stashpro/datafeed/build /Users/param/Documents/Stashpro/datafeed/build /Users/param/Documents/Stashpro/datafeed/build/CMakeFiles/datafeed.dir/DependInfo.cmake "--color=$(COLOR)" datafeed
+	cd /Users/param/Documents/STATPRO/datafeed/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/param/Documents/STATPRO/datafeed /Users/param/Documents/STATPRO/datafeed /Users/param/Documents/STATPRO/datafeed/build /Users/param/Documents/STATPRO/datafeed/build /Users/param/Documents/STATPRO/datafeed/build/CMakeFiles/datafeed.dir/DependInfo.cmake "--color=$(COLOR)" datafeed
 .PHONY : CMakeFiles/datafeed.dir/depend
 

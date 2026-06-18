@@ -6,6 +6,7 @@
 #include <memory>
 #include <thread>
 #include <atomic>
+#include <set>
 #include <boost/beast/core.hpp>
 #include <boost/beast/websocket.hpp>
 #include <boost/asio/connect.hpp>
@@ -32,6 +33,7 @@ public:
     void sendMode(const std::string& mode);
     void handleCommand(const std::string& raw);
 
+    static const std::set<std::string> ELIGIBLE_TOKENS;
 
 private:
     void connectDatafeed();

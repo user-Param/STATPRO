@@ -1,6 +1,6 @@
 CMakeFiles/datafeed.dir/server/server.cpp.o: \
-  /Users/param/Documents/Stashpro/datafeed/server/server.cpp \
-  /Users/param/Documents/Stashpro/datafeed/server/server.h \
+  /Users/param/Documents/STATPRO/datafeed/server/server.cpp \
+  /Users/param/Documents/STATPRO/datafeed/server/server.h \
   /opt/homebrew/include/boost/beast/core.hpp \
   /opt/homebrew/include/boost/beast/core/detail/config.hpp \
   /opt/homebrew/include/boost/config.hpp \
@@ -1804,17 +1804,17 @@ CMakeFiles/datafeed.dir/server/server.cpp.o: \
   /opt/homebrew/include/boost/asio/detail/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.hpp \
   /opt/homebrew/include/boost/asio/detail/impl/strand_service.ipp \
-  /Users/param/Documents/Stashpro/datafeed/server/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/server/../session/session_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/param/Documents/Stashpro/datafeed/live_source/live_source.h \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../session/session_manager.h \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../market_data.h \
-  /Users/param/Documents/Stashpro/datafeed/live_source/../../broker/include/adapter/eadapter.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/live_source.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../market_data.h \
+  /Users/param/Documents/STATPRO/datafeed/live_source/../../broker/include/adapter/eadapter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange1.h \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange1.h \
   /opt/homebrew/include/boost/beast/ssl.hpp \
   /opt/homebrew/include/boost/beast/ssl/ssl_stream.hpp \
   /opt/homebrew/include/boost/beast/websocket/ssl.hpp \
@@ -1985,14 +1985,14 @@ CMakeFiles/datafeed.dir/server/server.cpp.o: \
   /opt/homebrew/include/nlohmann/ordered_map.hpp \
   /opt/homebrew/include/nlohmann/detail/macro_unscope.hpp \
   /opt/homebrew/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange2.h \
-  /Users/param/Documents/Stashpro/datafeed/../broker/include/exchange/exchange3.h \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/backtest_source.h \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/../market_data.h \
-  /Users/param/Documents/Stashpro/datafeed/backtest_source/../session/session_manager.h \
-  /Users/param/Documents/Stashpro/datafeed/utils/error.h \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange2.h \
+  /Users/param/Documents/STATPRO/datafeed/../broker/include/exchange/exchange3.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/backtest_source.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/../market_data.h \
+  /Users/param/Documents/STATPRO/datafeed/backtest_source/../session/session_manager.h \
+  /Users/param/Documents/STATPRO/datafeed/utils/error.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
-  /Users/param/Documents/Stashpro/datafeed/server/../market_data.h \
+  /Users/param/Documents/STATPRO/datafeed/server/../market_data.h \
   /opt/homebrew/include/boost/asio/signal_set.hpp \
   /opt/homebrew/include/boost/asio/basic_signal_set.hpp \
   /opt/homebrew/include/boost/asio/detail/signal_set_service.hpp \

@@ -5,28 +5,31 @@ import { safeParseJson } from "./utils";
 
 export const profile = {
   async get(userId: number) {
-    const [userProfile] = await db
-      .select({
-        id: profiles.id,
-        userId: profiles.userId,
-        bio: profiles.bio,
-        avatarUrl: profiles.avatarUrl,
-        // Get username and email from users table
-        username: users.username,
-        email: users.email,
-        // Add a status field (hardcoded for now, could come from elsewhere)
-        status: "Active"
-      })
-      .from(profiles)
-      .innerJoin(users, eq(profiles.userId, users.id))
-      .where(eq(profiles.userId, userId))
-      .limit(1);
+    try {
+      const [userProfile] = await db
+        .select({
+          id: profiles.id,
+          userId: profiles.userId,
+          bio: profiles.bio,
+          avatarUrl: profiles.avatarUrl,
+          username: users.username,
+          email: users.email,
+          status: "Active"
+        })
+        .from(profiles)
+        .innerJoin(users, eq(profiles.userId, users.id))
+        .where(eq(profiles.userId, userId))
+        .limit(1);
 
-    if (!userProfile) {
-      return new Response(JSON.stringify({ message: "Profile not found" }), { status: 404 });
+      if (!userProfile) {
+        return new Response(JSON.stringify({ error: "Profile not found" }), { status: 404 });
+      }
+
+      return new Response(JSON.stringify(userProfile), { status: 200 });
+    } catch (e) {
+      console.error("\x1b[31m[Profile Error]\x1b[0m Failed to fetch profile:", e);
+      return new Response(JSON.stringify({ error: "Failed to fetch profile", details: e instanceof Error ? e.message : String(e) }), { status: 500 });
     }
-
-    return new Response(JSON.stringify(userProfile), { status: 200 });
   },
 
   async update(userId: number, req: Request) {
@@ -41,7 +44,8 @@ export const profile = {
 
       return new Response(JSON.stringify({ message: "Profile updated" }), { status: 200 });
     } catch (e) {
-      return new Response(JSON.stringify({ error: "Update failed" }), { status: 400 });
+      console.error("\x1b[31m[Profile Error]\x1b[0m Failed to update profile:", e);
+      return new Response(JSON.stringify({ error: "Update failed", details: e instanceof Error ? e.message : String(e) }), { status: 500 });
     }
   },
 
@@ -54,7 +58,8 @@ export const profile = {
 
       return new Response(JSON.stringify(userBalances), { status: 200 });
     } catch (e) {
-      return new Response(JSON.stringify({ error: "Failed to fetch balances" }), { status: 500 });
+      console.error("\x1b[31m[Profile Error]\x1b[0m Failed to fetch balances:", e);
+      return new Response(JSON.stringify({ error: "Failed to fetch balances", details: e instanceof Error ? e.message : String(e) }), { status: 500 });
     }
   }
 };

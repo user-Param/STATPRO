@@ -3,6 +3,10 @@ import { WebSocketServer } from "ws";
 
 const redis = new Redis(process.env.REDIS_URL || "redis://localhost:6379");
 
+redis.on("error", (e) => {
+  console.error("[Executor] Redis connection error:", e.message);
+});
+
 // Trust Wallet Agent Kit Wrapper - Now residing in the Executor
 class WalletAgentService {
   async createAutonomousWallet(userId: number) {
@@ -46,9 +50,17 @@ const httpServer = Bun.serve({
     },
     "/wallet/create": {
       POST: async (req) => {
-        const { userId } = await req.json();
-        const wallet = await walletAgent.createAutonomousWallet(userId);
-        return new Response(JSON.stringify(wallet), { status: 201 });
+        try {
+          const body = await req.json();
+          if (!body || typeof body.userId !== "number") {
+            return new Response(JSON.stringify({ error: "Missing or invalid userId" }), { status: 400 });
+          }
+          const wallet = await walletAgent.createAutonomousWallet(body.userId);
+          return new Response(JSON.stringify(wallet), { status: 201 });
+        } catch (e) {
+          console.error("[Executor] Wallet creation failed:", e);
+          return new Response(JSON.stringify({ error: "Wallet creation failed", details: e instanceof Error ? e.message : String(e) }), { status: 500 });
+        }
       }
     }
   }
@@ -61,42 +73,63 @@ wss.on("connection", (ws) => {
   console.log("[Executor] ✓ Engine connected via WebSocket on port 9001");
 
   ws.on("message", async (data) => {
+    let order: any;
     try {
-      const order = JSON.parse(data.toString());
-      if (order.type === "order") {
-        console.log(`[Executor] ⚡ Received Order from Engine: ${order.side} ${order.symbol}`);
+      order = JSON.parse(data.toString());
+    } catch (e) {
+      console.error("[Executor] Invalid JSON received from Engine:", data.toString().substring(0, 200));
+      ws.send(JSON.stringify({ type: "error", message: "Invalid JSON payload" }));
+      return;
+    }
 
-        // 1. Sign trade via Agent Kit
-        const signing = await walletAgent.signTrade(0, {
-          symbol: order.symbol,
-          side: order.side,
-          price: order.price,
-          quantity: order.quantity,
-          leverage: order.leverage,
-          market_type: order.market_type
-        });
+    if (order.type !== "order") {
+      console.warn(`[Executor] Unknown message type: ${order.type}`);
+      return;
+    }
 
-        // 2. Broadcast result back to Engine
-        ws.send(JSON.stringify({
-          type: "order_result",
-          order_id: order.order_id,
-          status: "FILLED",
-          strategy_id: order.strategy_id,
-          txHash: signing.txHash
-        }));
+    if (!order.symbol || !order.side) {
+      console.warn("[Executor] Malformed order: missing symbol or side");
+      ws.send(JSON.stringify({ type: "order_result", order_id: order.order_id, status: "REJECTED", reason: "Missing required fields" }));
+      return;
+    }
 
-        // 3. Update Redis for UI
-        await redis.publish("ORDER_EVENTS", JSON.stringify({
-          tradeId: order.order_id,
-          status: "FILLED",
-          symbol: order.symbol,
-          side: order.side,
-          pnl: "0.00",
-          txHash: signing.txHash
-        }));
-      }
+    try {
+      console.log(`[Executor] ⚡ Received Order from Engine: ${order.side} ${order.symbol}`);
+
+      const signing = await walletAgent.signTrade(0, {
+        symbol: order.symbol,
+        side: order.side,
+        price: order.price,
+        quantity: order.quantity,
+        leverage: order.leverage,
+        market_type: order.market_type
+      });
+
+      ws.send(JSON.stringify({
+        type: "order_result",
+        order_id: order.order_id,
+        status: "FILLED",
+        strategy_id: order.strategy_id,
+        txHash: signing.txHash
+      }));
+
+      await redis.publish("ORDER_EVENTS", JSON.stringify({
+        tradeId: order.order_id,
+        status: "FILLED",
+        symbol: order.symbol,
+        side: order.side,
+        pnl: "0.00",
+        txHash: signing.txHash
+      }));
     } catch (err) {
-      console.error("[Executor] Error processing order:", err);
+      console.error(`[Executor] Error processing order ${order.order_id}:`, err);
+      ws.send(JSON.stringify({
+        type: "order_result",
+        order_id: order.order_id,
+        status: "FAILED",
+        strategy_id: order.strategy_id,
+        reason: err instanceof Error ? err.message : "Unknown execution error"
+      }));
     }
   });
 
@@ -105,19 +138,12 @@ wss.on("connection", (ws) => {
   });
 
   ws.on("error", (error) => {
-    console.error("[Executor] WebSocket error:", error);
+    console.error("[Executor] WebSocket connection error:", error);
   });
 });
 
 wss.on("error", (error) => {
   console.error("[Executor] WebSocket server error:", error);
-});
-
-// Also add error handling to individual connections
-wss.on("connection", (ws) => {
-  ws.on("error", (error) => {
-    console.error("[Executor] WebSocket connection error:", error);
-  });
 });
 
 // Keep the process alive by maintaining references to the servers

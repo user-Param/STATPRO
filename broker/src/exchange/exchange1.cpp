@@ -6,7 +6,8 @@
 
 
 Exchange1::Exchange1() : connected_(false) {
-    ctx_.set_verify_mode(ssl::verify_none);
+    ctx_.set_default_verify_paths();
+    ctx_.set_verify_mode(ssl::verify_peer);
 }
 
 Exchange1::~Exchange1() {

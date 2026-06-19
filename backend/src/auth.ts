@@ -1,11 +1,14 @@
 import { SignJWT, jwtVerify } from "jose";
 import { db } from "./client";
-import { users } from "./schema";
+import { users, profiles } from "./schema";
 import { eq } from "drizzle-orm";
-import { safeParseJson } from "./utils";
+import { safeParseJson, validateEmail, validatePassword, validateUsername, sanitizeString } from "./utils";
 import bcrypt from "bcryptjs";
 
-const JWT_SECRET = process.env.JWT_SECRET || "secret-key-for-dev";
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) {
+  throw new Error("FATAL: JWT_SECRET environment variable is not set. Refusing to start with an insecure default.");
+}
 const encodedSecret = new TextEncoder().encode(JWT_SECRET);
 
 export const auth = {
@@ -14,10 +17,21 @@ export const auth = {
       const body = await safeParseJson(req);
       if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
       const { username, email, password } = body;
-      console.log(`\x1b[33m[Auth]\x1b[0m Attempting signup for user: ${username} (${email})`);
+
+      const emailErr = validateEmail(email);
+      if (emailErr) return new Response(JSON.stringify({ error: emailErr }), { status: 400 });
+      const usernameErr = validateUsername(username);
+      if (usernameErr) return new Response(JSON.stringify({ error: usernameErr }), { status: 400 });
+      const passwordErr = validatePassword(password);
+      if (passwordErr) return new Response(JSON.stringify({ error: passwordErr }), { status: 400 });
+
+      const sanitizedUsername = sanitizeString(username);
+      const sanitizedEmail = email.toLowerCase().trim();
+
+      console.log(`\x1b[33m[Auth]\x1b[0m Attempting signup for user: ${sanitizedUsername}`);
 
       // Check if user exists
-      const existing = await db.select().from(users).where(eq(users.email, email)).limit(1);
+      const existing = await db.select().from(users).where(eq(users.email, sanitizedEmail)).limit(1);
       if (existing.length > 0) {
         console.warn(`\x1b[33m[Auth]\x1b[0m Signup failed: User ${email} already exists`);
         return new Response(JSON.stringify({ error: "User already exists" }), { status: 400 });
@@ -27,8 +41,8 @@ export const auth = {
       const passwordHash = await bcrypt.hash(password, 10);
 
       const [newUser] = await db.insert(users).values({
-        username,
-        email,
+        username: sanitizedUsername,
+        email: sanitizedEmail,
         passwordHash,
       }).returning();
 
@@ -56,7 +70,7 @@ export const auth = {
       }), { status: 201 });
     } catch (e) {
       console.error("\x1b[31m[Auth Error]\x1b[0m Signup error:", e);
-      return new Response(JSON.stringify({ error: "Invalid request", details: e instanceof Error ? e.message : String(e) }), { status: 400 });
+      return new Response(JSON.stringify({ error: "Invalid request" }), { status: 400 });
     }
   },
 
@@ -65,11 +79,15 @@ export const auth = {
       const body = await safeParseJson(req);
       if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
       const { email, password } = body;
-      console.log(`\x1b[33m[Auth]\x1b[0m Attempting signin for: ${email}`);
+      if (!email || !password) {
+        return new Response(JSON.stringify({ error: "Email and password are required" }), { status: 400 });
+      }
+      console.log(`\x1b[33m[Auth]\x1b[0m Attempting signin`);
 
-      const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
+      const sanitizedEmail = email.toLowerCase().trim();
+      const [user] = await db.select().from(users).where(eq(users.email, sanitizedEmail)).limit(1);
       if (!user || !(await bcrypt.compare(password, user.passwordHash))) {
-        console.warn(`\x1b[33m[Auth]\x1b[0m Signin failed: Invalid credentials for ${email}`);
+        console.warn(`\x1b[33m[Auth]\x1b[0m Signin failed: Invalid credentials`);
         return new Response(JSON.stringify({ error: "Invalid credentials" }), { status: 401 });
       }
 

@@ -49,13 +49,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const userData = await apiRequest<User>('/profile');
         setUser(userData);
       } catch (error) {
-        // Only logout on actual authentication errors (401)
-        if (error.message === 'Unauthorized') {
+        const message = error instanceof Error ? error.message : String(error);
+        if (message === 'Unauthorized') {
           console.error('Auth check failed: Unauthorized', error);
           logout();
         } else {
-          // For other errors (like 404 profile not found, network errors, etc),
-          // keep the token but clear user data so we can retry later
           console.error('Auth check failed: Non-auth error', error);
           setUser(null);
         }

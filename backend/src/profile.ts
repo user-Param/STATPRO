@@ -1,7 +1,7 @@
 import { db } from "./client";
-import { profiles, balances, wallets } from "./schema";
+import { profiles, balances, wallets, users } from "./schema";
 import { eq } from "drizzle-orm";
-import { safeParseJson } from "./utils";
+import { safeParseJson, jsonResponse, errorResponse } from "./utils";
 
 export const profile = {
   async get(userId: number) {
@@ -11,10 +11,8 @@ export const profile = {
         userId: profiles.userId,
         bio: profiles.bio,
         avatarUrl: profiles.avatarUrl,
-        // Get username and email from users table
         username: users.username,
         email: users.email,
-        // Add a status field (hardcoded for now, could come from elsewhere)
         status: "Active"
       })
       .from(profiles)
@@ -23,25 +21,25 @@ export const profile = {
       .limit(1);
 
     if (!userProfile) {
-      return new Response(JSON.stringify({ message: "Profile not found" }), { status: 404 });
+      return jsonResponse({ message: "Profile not found" }, 404);
     }
 
-    return new Response(JSON.stringify(userProfile), { status: 200 });
+    return jsonResponse(userProfile);
   },
 
   async update(userId: number, req: Request) {
     try {
       const body = await safeParseJson(req);
-      if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
+      if (!body) return errorResponse("Missing body", 400);
       const { bio, avatarUrl } = body;
 
       await db.update(profiles)
         .set({ bio, avatarUrl })
         .where(eq(profiles.userId, userId));
 
-      return new Response(JSON.stringify({ message: "Profile updated" }), { status: 200 });
+      return jsonResponse({ message: "Profile updated" });
     } catch (e) {
-      return new Response(JSON.stringify({ error: "Update failed" }), { status: 400 });
+      return errorResponse("Update failed", 400);
     }
   },
 
@@ -52,9 +50,9 @@ export const profile = {
         .innerJoin(wallets, eq(balances.walletId, wallets.id))
         .where(eq(wallets.userId, userId));
 
-      return new Response(JSON.stringify(userBalances), { status: 200 });
+      return jsonResponse(userBalances);
     } catch (e) {
-      return new Response(JSON.stringify({ error: "Failed to fetch balances" }), { status: 500 });
+      return errorResponse("Failed to fetch balances", 500);
     }
   }
 };

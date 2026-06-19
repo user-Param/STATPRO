@@ -1,5 +1,14 @@
-export const jsonResponse = (data: any, status = 200) => {
+export const jsonResponse = (data: unknown, status = 200) => {
   return new Response(JSON.stringify(data), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
+};
+
+export const errorResponse = (error: string, status = 400, details?: string) => {
+  const body: { error: string; details?: string } = { error };
+  if (details) body.details = details;
+  return new Response(JSON.stringify(body), {
     status,
     headers: { "Content-Type": "application/json" },
   });

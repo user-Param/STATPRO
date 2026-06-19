@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { apiRequest } from '@/lib/api-client';
+import { inputClassCompact } from '@/lib/styles';
 
 const SystemSetup: React.FC = () => {
   const [symbol, setSymbol] = useState('BTC/USDT');
@@ -56,7 +57,7 @@ const SystemSetup: React.FC = () => {
             type="text"
             value={symbol}
             onChange={(e) => setSymbol(e.target.value)}
-            className="w-full px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className={inputClassCompact}
           />
         </div>
         <div>
@@ -66,7 +67,7 @@ const SystemSetup: React.FC = () => {
             min="1"
             value={lookback}
             onChange={(e) => setLookback(parseInt(e.target.value) || 0)}
-            className="w-full px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className={inputClassCompact}
           />
         </div>
         <div>
@@ -77,7 +78,7 @@ const SystemSetup: React.FC = () => {
             min="0"
             value={stdDevMult}
             onChange={(e) => setStdDevMult(parseFloat(e.target.value) || 0)}
-            className="w-full px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className={inputClassCompact}
           />
         </div>
         <div>
@@ -88,7 +89,7 @@ const SystemSetup: React.FC = () => {
             min="0"
             value={stopLossSd}
             onChange={(e) => setStopLossSd(parseFloat(e.target.value) || 0)}
-            className="w-full px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className={inputClassCompact}
           />
         </div>
         <div>
@@ -98,7 +99,7 @@ const SystemSetup: React.FC = () => {
             min="1"
             value={leverage}
             onChange={(e) => setLeverage(parseInt(e.target.value) || 0)}
-            className="w-full px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className={inputClassCompact}
           />
         </div>
         <div>
@@ -108,7 +109,7 @@ const SystemSetup: React.FC = () => {
             min="1"
             value={quantity}
             onChange={(e) => setQuantity(parseInt(e.target.value) || 0)}
-            className="w-full px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className={inputClassCompact}
           />
         </div>
         <button

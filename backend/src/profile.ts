@@ -1,6 +1,6 @@
 import { db } from "./client";
 import { profiles, balances, wallets, users } from "./schema";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { safeParseJson } from "./utils";
 
 export const profile = {
@@ -14,8 +14,7 @@ export const profile = {
         // Get username and email from users table
         username: users.username,
         email: users.email,
-        // Add a status field (hardcoded for now, could come from elsewhere)
-        status: "Active"
+        status: sql<string>`'Active'`.as('status')
       })
       .from(profiles)
       .innerJoin(users, eq(profiles.userId, users.id))

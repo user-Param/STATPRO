@@ -3,10 +3,17 @@ const API_BASE_URL = 'http://localhost:4000';
 export async function apiRequest<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = localStorage.getItem('token')?.trim() ?? null;
 
-  const headers = {
+  const headers: Record<string, string> = {
     'Content-Type': 'application/json',
-    ...options.headers,
   };
+
+  // Merge in any headers from options
+  if (options.headers) {
+    const incoming = options.headers as Record<string, string>;
+    for (const key in incoming) {
+      headers[key] = incoming[key];
+    }
+  }
 
   if (token) {
     headers['Authorization'] = `Bearer ${token}`;

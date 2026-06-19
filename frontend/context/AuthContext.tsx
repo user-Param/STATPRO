@@ -48,9 +48,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       try {
         const userData = await apiRequest<User>('/profile');
         setUser(userData);
-      } catch (error) {
+      } catch (error: unknown) {
+        const message = error instanceof Error ? error.message : String(error);
         // Only logout on actual authentication errors (401)
-        if (error.message === 'Unauthorized') {
+        if (message === 'Unauthorized') {
           console.error('Auth check failed: Unauthorized', error);
           logout();
         } else {

@@ -32,8 +32,28 @@ export const auth = {
         passwordHash,
       }).returning();
 
+      // Create a default profile for the new user
+      await db.insert(profiles).values({
+        userId: newUser.id,
+        bio: "",
+        avatarUrl: ""
+      });
+
+      // Create JWT token for the new user
+      const token = await new SignJWT({ userId: newUser.id })
+        .setProtectedHeader({ alg: "HS256" })
+        .setExpirationTime("24h")
+        .sign(encodedSecret);
+
       console.log(`\x1b[32m[Auth]\x1b[0m User created successfully: ID ${newUser.id}`);
-      return new Response(JSON.stringify({ message: "User created", userId: newUser.id }), { status: 201 });
+      return new Response(JSON.stringify({
+        token,
+        user: {
+          id: newUser.id,
+          username: newUser.username,
+          email: newUser.email
+        }
+      }), { status: 201 });
     } catch (e) {
       console.error("\x1b[31m[Auth Error]\x1b[0m Signup error:", e);
       return new Response(JSON.stringify({ error: "Invalid request", details: e instanceof Error ? e.message : String(e) }), { status: 400 });
@@ -59,7 +79,14 @@ export const auth = {
         .sign(encodedSecret);
 
       console.log(`\x1b[32m[Auth]\x1b[0m Signin successful for user ID: ${user.id}`);
-      return new Response(JSON.stringify({ token }), { status: 200 });
+      return new Response(JSON.stringify({
+        token,
+        user: {
+          id: user.id,
+          username: user.username,
+          email: user.email
+        }
+      }), { status: 200 });
     } catch (e) {
       console.error("\x1b[31m[Auth Error]\x1b[0m Signin failed:", e);
       return new Response(JSON.stringify({ error: "Authentication failed" }), { status: 401 });

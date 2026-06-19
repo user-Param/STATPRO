@@ -26,12 +26,27 @@ else
     echo "PostgreSQL is ready."
 fi
 
-# --- 2. Cleanup Old Processes ---
+# --- 2. Initialize Database ---
+echo "Initializing Database..."
+# Check if statpro database exists (using postgres user)
+if ! psql -h localhost -p 5000 -U postgres -d postgres -tAc "SELECT 1 FROM pg_database WHERE datname = 'statpro'" | grep -q 1; then
+    echo "Creating statpro database..."
+    createdb -h localhost -p 5000 -U postgres statpro
+else
+    echo "Database statpro already exists."
+fi
+# Run database initialization script
+cd "$PROJECT_ROOT/backend"
+bun run init_db.ts
+echo "Database initialized."
+
+# --- 3. Cleanup Old Processes ---
 echo "Cleaning up old processes..."
 lsof -ti:3000,3001,3002 | xargs kill -9 2>/dev/null || true
+lsof -ti:4000,4001 | xargs kill -9 2>/dev/null || true
 lsof -ti:9000,9001 | xargs kill -9 2>/dev/null || true
 
-# --- 3. Build & Start C++ Microservices ---
+# --- 4. Build & Start C++ Microservices ---
 
 # Datafeed
 echo "Building Datafeed..."
@@ -51,7 +66,7 @@ cmake .. > /dev/null && make -j4 > /dev/null
 ENGINE_PID=$!
 echo " Engine started (PID: $ENGINE_PID)"
 
-# --- 4. Start TypeScript/Bun Services ---
+# --- 5. Start TypeScript/Bun Services ---
 
 # Backend API
 echo " Starting Backend API (Bun)..."
@@ -67,7 +82,7 @@ bun run index.ts > "$LOG_DIR/executor.log" 2>&1 &
 EXECUTOR_PID=$!
 echo " Execution Service started (PID: $EXECUTOR_PID)"
 
-# --- 5. Start Frontend ---
+# --- 6. Start Frontend ---
 
 # Frontend (Next.js)
 echo " Starting Frontend (Next.js)..."

@@ -1,1 +1,14 @@
 [32m[Server][0m Node.js API Layer running on port 4000
+[33m[Auth][0m Attempting signin for: paramjeetsinghpawar25@gmail.com
+Query: select "id", "username", "email", "password_hash", "created_at" from "users" where "users"."email" = $1 limit $2 -- params: ["paramjeetsinghpawar25@gmail.com", 1]
+[32m[Auth][0m Signin successful for user ID: 3
+Query: select "balances"."id", "balances"."wallet_id", "balances"."asset", "balances"."amount", "balances"."updated_at", "wallets"."id", "wallets"."user_id", "wallets"."address", "wallets"."wallet_type", "wallets"."created_at" from "balances" inner join "wallets" on "balances"."wallet_id" = "wallets"."id" where "wallets"."user_id" = $1 -- params: [3]
+Query: select "balances"."id", "balances"."wallet_id", "balances"."asset", "balances"."amount", "balances"."updated_at", "wallets"."id", "wallets"."user_id", "wallets"."address", "wallets"."wallet_type", "wallets"."created_at" from "balances" inner join "wallets" on "balances"."wallet_id" = "wallets"."id" where "wallets"."user_id" = $1 -- params: [3]
+[33m[Auth][0m Attempting signin for: paramjeetsinghpawar25@gmail.com
+Query: select "id", "username", "email", "password_hash", "created_at" from "users" where "users"."email" = $1 limit $2 -- params: ["paramjeetsinghpawar25@gmail.com", 1]
+[32m[Auth][0m Signin successful for user ID: 3
+Query: select "balances"."id", "balances"."wallet_id", "balances"."asset", "balances"."amount", "balances"."updated_at", "wallets"."id", "wallets"."user_id", "wallets"."address", "wallets"."wallet_type", "wallets"."created_at" from "balances" inner join "wallets" on "balances"."wallet_id" = "wallets"."id" where "wallets"."user_id" = $1 -- params: [3]
+Query: select "balances"."id", "balances"."wallet_id", "balances"."asset", "balances"."amount", "balances"."updated_at", "wallets"."id", "wallets"."user_id", "wallets"."address", "wallets"."wallet_type", "wallets"."created_at" from "balances" inner join "wallets" on "balances"."wallet_id" = "wallets"."id" where "wallets"."user_id" = $1 -- params: [3]
+[33m[Auth][0m Attempting signin for: paramjeetsinghpawar25@gmail.com
+Query: select "id", "username", "email", "password_hash", "created_at" from "users" where "users"."email" = $1 limit $2 -- params: ["paramjeetsinghpawar25@gmail.com", 1]
+[32m[Auth][0m Signin successful for user ID: 3

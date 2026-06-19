@@ -1,5 +1,7 @@
 --- Starting STATPRO Engine ---
-[RiskManager] ✓ Connected to Executor at localhost:9001
+[RiskManager] Failed to connect to Executor: connect: Connection refused [system:61 at /opt/homebrew/include/boost/asio/detail/reactive_socket_service.hpp:587:33 in function 'connect']
 [Main] Loading C++ StatArb Strategy...
 [AlgoManager] Added hardcoded strategy: strategy_0
 [Engine] Initializing with 148 eligible tokens.
+
+Engine is running. Trading logic active.

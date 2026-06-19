@@ -29,7 +29,7 @@ const walletAgent = new WalletAgentService();
 console.log("🚀 Execution Service starting...");
 
 // --- HTTP API (for Frontend/API requests) ---
-Bun.serve({
+const httpServer = Bun.serve({
   port: 4001,
   routes: {
     "/execute": {
@@ -65,7 +65,7 @@ wss.on("connection", (ws) => {
       const order = JSON.parse(data.toString());
       if (order.type === "order") {
         console.log(`[Executor] ⚡ Received Order from Engine: ${order.side} ${order.symbol}`);
-        
+
         // 1. Sign trade via Agent Kit
         const signing = await walletAgent.signTrade(0, {
           symbol: order.symbol,
@@ -103,6 +103,25 @@ wss.on("connection", (ws) => {
   ws.on("close", () => {
     console.log("[Executor] Engine disconnected");
   });
+
+  ws.on("error", (error) => {
+    console.error("[Executor] WebSocket error:", error);
+  });
 });
+
+wss.on("error", (error) => {
+  console.error("[Executor] WebSocket server error:", error);
+});
+
+// Also add error handling to individual connections
+wss.on("connection", (ws) => {
+  ws.on("error", (error) => {
+    console.error("[Executor] WebSocket connection error:", error);
+  });
+});
+
+// Keep the process alive by maintaining references to the servers
+// (This prevents the Bun process from exiting immediately)
+const _ = { httpServer }; // eslint-disable-line no-unused-vars
 
 console.log("Executor listening on http://localhost:4001 (HTTP) and ws://localhost:9001 (WS)");

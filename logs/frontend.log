@@ -4,8 +4,8 @@
 
 ▲ Next.js 16.2.7 (Turbopack)
 - Local:         http://localhost:3001
-- Network:       http://192.168.0.7:3001
-✓ Ready in 253ms
+- Network:       http://192.168.1.73:3001
+✓ Ready in 258ms
 ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
  We detected multiple lockfiles and selected the directory of /Users/param/Documents/STATPRO/package-lock.json as the root directory.
  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
@@ -14,3 +14,32 @@
    * /Users/param/Documents/STATPRO/frontend/package-lock.json
 
 
+ GET /signin 200 in 386ms (next.js: 247ms, application-code: 140ms)
+ GET /signin 200 in 308ms (next.js: 270ms, application-code: 38ms)
+ GET / 200 in 72ms (next.js: 33ms, application-code: 38ms)
+ GET /spot 200 in 42ms (next.js: 25ms, application-code: 17ms)
+ GET /signin 200 in 22ms (next.js: 13ms, application-code: 9ms)
+ GET /signin 200 in 24ms (next.js: 2ms, application-code: 22ms)
+ GET /spot 200 in 11ms (next.js: 1506µs, application-code: 9ms)
+ GET /profile 200 in 45ms (next.js: 32ms, application-code: 13ms)
+ GET /signin 200 in 20ms (next.js: 1593µs, application-code: 19ms)
+ GET /signin 200 in 50ms (next.js: 8ms, application-code: 43ms)
+ GET / 200 in 39ms (next.js: 8ms, application-code: 31ms)
+ GET /spot 200 in 21ms (next.js: 6ms, application-code: 15ms)
+ GET /signin 200 in 31ms (next.js: 2ms, application-code: 29ms)
+ GET /signin 200 in 12ms (next.js: 2ms, application-code: 10ms)
+ GET /spot 200 in 8ms (next.js: 1078µs, application-code: 7ms)
+ GET /profile 200 in 23ms (next.js: 6ms, application-code: 18ms)
+ GET /signin 200 in 27ms (next.js: 1474µs, application-code: 26ms)
+ GET /signin 200 in 19ms (next.js: 2ms, application-code: 16ms)
+ GET /signin 200 in 96ms (next.js: 47ms, application-code: 49ms)
+ GET /signin 200 in 18ms (next.js: 1186µs, application-code: 17ms)
+ GET /signin 200 in 20ms (next.js: 873µs, application-code: 19ms)
+ GET /signin 200 in 13ms (next.js: 1272µs, application-code: 11ms)
+ GET /signin 200 in 39ms (next.js: 5ms, application-code: 34ms)
+ GET /signin 200 in 19ms (next.js: 3ms, application-code: 16ms)
+ GET /signin 200 in 32ms (next.js: 4ms, application-code: 28ms)
+ GET /signin 200 in 16ms (next.js: 2ms, application-code: 14ms)
+ GET /signin 200 in 85ms (next.js: 4ms, application-code: 80ms)
+✓ Compiled in 147ms
+ GET /spot 200 in 36ms (next.js: 14ms, application-code: 23ms)

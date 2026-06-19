@@ -2,7 +2,7 @@ Statpro Started
 [LiveSource] Starting...
 [EAdapter] Exchange set to BINANCE
 [EAdapter] Starting (BINANCE)...
-Fatal accept error, stopping listener: Invalid argument
+[Server] Client Connected
 [Exchange1] Connected to Binance WebSocket
 [EAdapter] Connected to exchange
 [Exchange1] Subscribed to tickers for: BTCUSDT ETHUSDT SOLUSDT 

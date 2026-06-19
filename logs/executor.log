@@ -1,3 +1,2 @@
 🚀 Execution Service starting...
 Executor listening on http://localhost:4001 (HTTP) and ws://localhost:9001 (WS)
-[Executor] ✓ Engine connected via WebSocket on port 9001

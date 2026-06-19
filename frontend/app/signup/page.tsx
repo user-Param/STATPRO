@@ -8,6 +8,7 @@ import { useAuth } from '@/context/AuthContext';
 export default function SignupPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -21,11 +22,18 @@ export default function SignupPage() {
     try {
       const data = await apiRequest<{ token: string; user: any }>('/signup', {
         method: 'POST',
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password, username }),
       });
 
+      // Validate token
+      if (!data.token || typeof data.token !== 'string' || data.token.trim() === '') {
+        setError('Invalid token received from server');
+        setLoading(false);
+        return;
+      }
+
       login(data.token, data.user);
-      router.push('/profile');
+      router.push('/spot');
     } catch (err: any) {
       setError(err.message || 'An error occurred during signup');
     } finally {
@@ -55,6 +63,17 @@ export default function SignupPage() {
               required
               className="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
               placeholder="name@example.com"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-zinc-300 mb-1">Username</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+              className="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              placeholder="Choose a username"
             />
           </div>
           <div>

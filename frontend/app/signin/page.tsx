@@ -24,8 +24,15 @@ export default function SigninPage() {
         body: JSON.stringify({ email, password }),
       });
 
+      // Validate token
+      if (!data.token || typeof data.token !== 'string' || data.token.trim() === '') {
+        setError('Invalid token received from server');
+        setLoading(false);
+        return;
+      }
+
       login(data.token, data.user);
-      router.push('/profile');
+      router.push('/spot');
     } catch (err: any) {
       setError(err.message || 'Invalid email or password');
     } finally {

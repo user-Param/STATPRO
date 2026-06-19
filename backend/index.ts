@@ -99,6 +99,21 @@ app.get("/balance", async (req, res) => {
   await handleResponse(res, response);
 });
 
+// Strategy control endpoint (protected)
+app.post("/strategy/toggle", async (req, res) => {
+  const webReq = createWebRequest(req);
+  const response = await auth.verifyJwt(webReq, async (userId) => {
+    // In a real implementation, we would start/stop the strategy here.
+    // For now, just log and return success.
+    console.log(`[Strategy] User ${userId} toggled strategy:`, req.body);
+    return new Response(JSON.stringify({ success: true, message: 'Strategy toggle acknowledged' }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  });
+  await handleResponse(res, response);
+});
+
 app.listen(port, () => {
   console.log(`\x1b[32m[Server]\x1b[0m Node.js API Layer running on port ${port}`);
 });

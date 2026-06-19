@@ -5,8 +5,28 @@ import { safeParseJson } from "./utils";
 
 export const profile = {
   async get(userId: number) {
-    const [userProfile] = await db.select().from(profiles).where(eq(profiles.userId, userId)).limit(1);
-    return new Response(JSON.stringify(userProfile || { message: "Profile not found" }), { status: 200 });
+    const [userProfile] = await db
+      .select({
+        id: profiles.id,
+        userId: profiles.userId,
+        bio: profiles.bio,
+        avatarUrl: profiles.avatarUrl,
+        // Get username and email from users table
+        username: users.username,
+        email: users.email,
+        // Add a status field (hardcoded for now, could come from elsewhere)
+        status: "Active"
+      })
+      .from(profiles)
+      .innerJoin(users, eq(profiles.userId, users.id))
+      .where(eq(profiles.userId, userId))
+      .limit(1);
+
+    if (!userProfile) {
+      return new Response(JSON.stringify({ message: "Profile not found" }), { status: 404 });
+    }
+
+    return new Response(JSON.stringify(userProfile), { status: 200 });
   },
 
   async update(userId: number, req: Request) {

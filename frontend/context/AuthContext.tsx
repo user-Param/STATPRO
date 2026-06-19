@@ -28,8 +28,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
 
   const login = (newToken: string, newUser: User) => {
-    localStorage.setItem('token', newToken);
-    setToken(newToken);
+    const trimmedToken = newToken.trim();
+    localStorage.setItem('token', trimmedToken);
+    setToken(trimmedToken);
     setUser(newUser);
   };
 
@@ -41,15 +42,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const checkAuth = async () => {
     setIsLoading(true);
-    const storedToken = localStorage.getItem('token');
+    const storedToken = localStorage.getItem('token')?.trim() ?? null;
     if (storedToken) {
       setToken(storedToken);
       try {
         const userData = await apiRequest<User>('/profile');
         setUser(userData);
       } catch (error) {
-        console.error('Auth check failed:', error);
-        logout();
+        // Only logout on actual authentication errors (401)
+        if (error.message === 'Unauthorized') {
+          console.error('Auth check failed: Unauthorized', error);
+          logout();
+        } else {
+          // For other errors (like 404 profile not found, network errors, etc),
+          // keep the token but clear user data so we can retry later
+          console.error('Auth check failed: Non-auth error', error);
+          setUser(null);
+        }
       }
     }
     setIsLoading(false);

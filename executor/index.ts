@@ -26,17 +26,33 @@ class WalletAgentService {
 
 const walletAgent = new WalletAgentService();
 
-console.log("🚀 Execution Service starting...");
+console.log("Execution Service starting...");
 
-// --- HTTP API (for Frontend/API requests) ---
+const INTERNAL_API_KEY = process.env.EXECUTOR_API_KEY;
+if (!INTERNAL_API_KEY) {
+  throw new Error("FATAL: EXECUTOR_API_KEY environment variable is not set. Refusing to start without authentication.");
+}
+
+function authenticateRequest(req: Request): boolean {
+  const apiKey = req.headers.get("x-api-key");
+  return apiKey === INTERNAL_API_KEY;
+}
+
+// --- HTTP API (for internal Backend requests only) ---
 const httpServer = Bun.serve({
   port: 4001,
   routes: {
     "/execute": {
       POST: async (req) => {
+        if (!authenticateRequest(req)) {
+          return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401 });
+        }
         try {
           const body = await req.json();
           const { userId, walletId, symbol, side, type, amount, price } = body;
+          if (!userId || !walletId || !symbol || !side) {
+            return new Response(JSON.stringify({ error: "Missing required fields" }), { status: 400 });
+          }
           const signing = await walletAgent.signTrade(walletId, { symbol, side, type, quantity: amount, price });
           return new Response(JSON.stringify({ success: true, txHash: signing.txHash }), { status: 200 });
         } catch (e) {
@@ -46,9 +62,20 @@ const httpServer = Bun.serve({
     },
     "/wallet/create": {
       POST: async (req) => {
-        const { userId } = await req.json();
-        const wallet = await walletAgent.createAutonomousWallet(userId);
-        return new Response(JSON.stringify(wallet), { status: 201 });
+        if (!authenticateRequest(req)) {
+          return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401 });
+        }
+        try {
+          const body = await req.json();
+          const { userId } = body;
+          if (!userId) {
+            return new Response(JSON.stringify({ error: "userId is required" }), { status: 400 });
+          }
+          const wallet = await walletAgent.createAutonomousWallet(userId);
+          return new Response(JSON.stringify(wallet), { status: 201 });
+        } catch (e) {
+          return new Response(JSON.stringify({ error: "Wallet creation failed" }), { status: 500 });
+        }
       }
     }
   }

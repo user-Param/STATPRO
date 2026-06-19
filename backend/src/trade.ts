@@ -1,7 +1,7 @@
 import { db } from "./client";
 import { trades, wallets } from "./schema";
 import { eq } from "drizzle-orm";
-import { safeParseJson } from "./utils";
+import { safeParseJson, validateTradeInput } from "./utils";
 import { redisPub, redisSub, CHANNELS, requestResponse } from "./redis";
 
 // Conceptual Trust Wallet Agent Kit Wrapper
@@ -30,8 +30,15 @@ export const trade = {
     try {
       const body = await safeParseJson(req);
       if (!body) return new Response(JSON.stringify({ error: "Missing body" }), { status: 400 });
+
+      const validationErr = validateTradeInput(body);
+      if (validationErr) return new Response(JSON.stringify({ error: validationErr }), { status: 400 });
+
       const { symbol, side, type, amount, price, walletId } = body;
-      
+      if (typeof walletId !== "number" || walletId <= 0) {
+        return new Response(JSON.stringify({ error: "Valid walletId is required" }), { status: 400 });
+      }
+
       console.log(`\x1b[35m[Trade Orchestrator]\x1b[0m New Order: ${side} ${type} ${amount} ${symbol} (User: ${userId})`);
 
       // 1. Risk Check via Redis (Communicating with Engine Microservice)
@@ -45,8 +52,8 @@ export const trade = {
           symbol
         }, 3000);
       } catch (e) {
-        console.warn("\x1b[33m[Trade Orchestrator]\x1b[0m Risk Engine timeout, defaulting to manual approval (DEV MODE)");
-        riskCheck = { allowed: true };
+        console.error("\x1b[31m[Trade Orchestrator]\x1b[0m Risk Engine unavailable — rejecting order for safety");
+        return new Response(JSON.stringify({ error: "Risk engine unavailable, please try again later" }), { status: 503 });
       }
 
       if (!riskCheck.allowed) {

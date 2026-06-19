@@ -13,7 +13,8 @@ const std::unordered_map<std::string, std::string> Exchange2::SYMBOL_TO_MINT = {
 };
 
 Exchange2::Exchange2() {
-    ctx_.set_verify_mode(ssl::verify_none);
+    ctx_.set_default_verify_paths();
+    ctx_.set_verify_mode(ssl::verify_peer);
 }
 
 Exchange2::~Exchange2() {
@@ -85,7 +86,8 @@ void Exchange2::stream_loop() {
         try {
             net::io_context ioc;
             ssl::context ctx{ssl::context::tlsv12_client};
-            ctx.set_verify_mode(ssl::verify_none);
+            ctx.set_default_verify_paths();
+            ctx.set_verify_mode(ssl::verify_peer);
 
             beast::ssl_stream<beast::tcp_stream> stream(ioc, ctx);
             if (!SSL_set_tlsext_host_name(stream.native_handle(), host_.c_str())) continue;

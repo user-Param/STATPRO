@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { apiRequest } from '@/lib/api-client';
 import { useAuth } from '@/context/AuthContext';
-import { useRouter } from 'next/navigation';
+import { useAuthGuard } from '@/hooks/useAuthGuard';
 
 interface UserProfile {
   username: string;
@@ -18,18 +18,15 @@ interface Balance {
 }
 
 const ProfilePage = () => {
-  const { user, isAuthenticated } = useAuth();
-  const router = useRouter();
+  const { user } = useAuth();
+  const { isAuthenticated } = useAuthGuard();
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [balances, setBalances] = useState<Balance[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    if (!isAuthenticated) {
-      router.push('/signin');
-      return;
-    }
+    if (!isAuthenticated) return;
 
     async function fetchData() {
       try {
@@ -47,7 +44,7 @@ const ProfilePage = () => {
     }
 
     fetchData();
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated]);
 
   if (loading) {
     return (

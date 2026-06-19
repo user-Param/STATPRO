@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useAuth } from '@/context/AuthContext';
-import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
+import { useAuthGuard } from '@/hooks/useAuthGuard';
 import Ticker from './components/Ticker';
 import Chart from './components/Chart';
 import SystemSetup from './components/SystemSetup';
@@ -10,8 +9,7 @@ import Positions from './components/Positions';
 import RiskManager from './components/RiskManager';
 
 const SpotPage = () => {
-  const { isAuthenticated } = useAuth();
-  const router = useRouter();
+  useAuthGuard();
 
   // Risk manager state variables (not used in SystemSetup, kept here for now)
   const [maxDrawdown, setMaxDrawdown] = useState(30);
@@ -20,12 +18,6 @@ const SpotPage = () => {
   const [maxPositionPct, setMaxPositionPct] = useState(10);
   const [volatilityLookback, setVolatilityLookback] = useState(20);
   const [varConfidence, setVarConfidence] = useState(0.95);
-
-  useEffect(() => {
-    if (!isAuthenticated) {
-      router.push('/signin');
-    }
-  }, [isAuthenticated, router]);
 
   return (
     <div className="flex flex-col gap-6">

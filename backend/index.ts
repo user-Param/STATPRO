@@ -3,6 +3,8 @@ import cors from "cors";
 import { auth } from "./src/auth";
 import { trade } from "./src/trade";
 import { profile } from "./src/profile";
+import { jsonResponse } from "./src/utils";
+import { logger } from "./src/logger";
 
 const app = express();
 app.use(cors()); // Enable CORS for all routes
@@ -105,15 +107,12 @@ app.post("/strategy/toggle", async (req, res) => {
   const response = await auth.verifyJwt(webReq, async (userId) => {
     // In a real implementation, we would start/stop the strategy here.
     // For now, just log and return success.
-    console.log(`[Strategy] User ${userId} toggled strategy:`, req.body);
-    return new Response(JSON.stringify({ success: true, message: 'Strategy toggle acknowledged' }), {
-      status: 200,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    logger.debug("Strategy", `User ${userId} toggled strategy: ${JSON.stringify(req.body)}`);
+    return jsonResponse({ success: true, message: 'Strategy toggle acknowledged' });
   });
   await handleResponse(res, response);
 });
 
 app.listen(port, () => {
-  console.log(`\x1b[32m[Server]\x1b[0m Node.js API Layer running on port ${port}`);
+  logger.info("Server", `Node.js API Layer running on port ${port}`);
 });

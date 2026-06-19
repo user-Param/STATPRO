@@ -1,30 +1,10 @@
 import { Redis } from "ioredis";
 import { WebSocketServer } from "ws";
+import { WalletAgentService } from "../backend/src/wallet-agent";
 
 const redis = new Redis(process.env.REDIS_URL || "redis://localhost:6379");
 
-// Trust Wallet Agent Kit Wrapper - Now residing in the Executor
-class WalletAgentService {
-  async createAutonomousWallet(userId: number) {
-    console.log(`[Executor] Creating autonomous wallet for user ${userId}...`);
-    return {
-      address: `0x${Math.random().toString(16).substring(2, 18)}`,
-      agentId: `agent_${userId}_${Date.now()}`
-    };
-  }
-
-  async signTrade(walletId: number, tradeDetails: any) {
-    console.log(`[Executor] Signing ${tradeDetails.market_type || 'SPOT'} trade for wallet ${walletId} via Agent Kit...`);
-    console.log(`[Executor] Details: ${tradeDetails.side} ${tradeDetails.quantity} ${tradeDetails.symbol} @ ${tradeDetails.price} (Leverage: ${tradeDetails.leverage || 1}x)`);
-    // This is where the actual Trust Wallet Agent Kit SDK would be used
-    return {
-      signature: "0x_signed_payload_from_agent_kit",
-      txHash: `0x${Math.random().toString(16).substring(2, 32)}`
-    };
-  }
-}
-
-const walletAgent = new WalletAgentService();
+const walletAgent = new WalletAgentService("Executor");
 
 console.log("🚀 Execution Service starting...");
 
@@ -66,7 +46,6 @@ wss.on("connection", (ws) => {
       if (order.type === "order") {
         console.log(`[Executor] ⚡ Received Order from Engine: ${order.side} ${order.symbol}`);
 
-        // 1. Sign trade via Agent Kit
         const signing = await walletAgent.signTrade(0, {
           symbol: order.symbol,
           side: order.side,
@@ -76,7 +55,6 @@ wss.on("connection", (ws) => {
           market_type: order.market_type
         });
 
-        // 2. Broadcast result back to Engine
         ws.send(JSON.stringify({
           type: "order_result",
           order_id: order.order_id,
@@ -85,7 +63,6 @@ wss.on("connection", (ws) => {
           txHash: signing.txHash
         }));
 
-        // 3. Update Redis for UI
         await redis.publish("ORDER_EVENTS", JSON.stringify({
           tradeId: order.order_id,
           status: "FILLED",
@@ -113,7 +90,6 @@ wss.on("error", (error) => {
   console.error("[Executor] WebSocket server error:", error);
 });
 
-// Also add error handling to individual connections
 wss.on("connection", (ws) => {
   ws.on("error", (error) => {
     console.error("[Executor] WebSocket connection error:", error);
@@ -121,7 +97,6 @@ wss.on("connection", (ws) => {
 });
 
 // Keep the process alive by maintaining references to the servers
-// (This prevents the Bun process from exiting immediately)
 const _ = { httpServer }; // eslint-disable-line no-unused-vars
 
 console.log("Executor listening on http://localhost:4001 (HTTP) and ws://localhost:9001 (WS)");

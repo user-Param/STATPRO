@@ -1,6 +1,6 @@
 import { SignJWT, jwtVerify } from "jose";
 import { db } from "./client";
-import { users } from "./schema";
+import { users, profiles } from "./schema";
 import { eq } from "drizzle-orm";
 import { safeParseJson } from "./utils";
 import bcrypt from "bcryptjs";

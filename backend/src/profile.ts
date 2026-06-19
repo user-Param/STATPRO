@@ -1,5 +1,5 @@
 import { db } from "./client";
-import { profiles, balances, wallets } from "./schema";
+import { profiles, balances, wallets, users } from "./schema";
 import { eq } from "drizzle-orm";
 import { safeParseJson } from "./utils";
 

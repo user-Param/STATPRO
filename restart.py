@@ -14,18 +14,32 @@ def run(cmd, cwd=None):
 def kill_port(port):
     r = subprocess.run(f"lsof -ti:{port}", shell=True, capture_output=True, text=True)
     for pid in r.stdout.strip().split():
+        if not pid:
+            continue
         try:
             os.kill(int(pid), signal.SIGKILL)
             print(f"  killed PID {pid} on port {port}")
-        except: pass
+        except ProcessLookupError:
+            print(f"  PID {pid} on port {port} already exited")
+        except PermissionError:
+            print(f"  ERROR: no permission to kill PID {pid} on port {port}")
+        except (ValueError, OSError) as e:
+            print(f"  ERROR: failed to kill PID {pid} on port {port}: {e}")
 
 def kill_name(name):
     r = subprocess.run(f"pgrep -f {name}", shell=True, capture_output=True, text=True)
     for pid in r.stdout.strip().split():
+        if not pid:
+            continue
         try:
             os.kill(int(pid), signal.SIGKILL)
             print(f"  killed {name} PID {pid}")
-        except: pass
+        except ProcessLookupError:
+            print(f"  {name} PID {pid} already exited")
+        except PermissionError:
+            print(f"  ERROR: no permission to kill {name} PID {pid}")
+        except (ValueError, OSError) as e:
+            print(f"  ERROR: failed to kill {name} PID {pid}: {e}")
 
 print("=== Stopping all STATPRO services ===")
 kill_port(9000)
@@ -38,10 +52,16 @@ kill_name("research_executor")
 time.sleep(2)
 
 print("\n=== Building datafeed ===")
-run("make -j4", cwd=f"{PROJECT}/datafeed/build")
+r = run("make -j4", cwd=f"{PROJECT}/datafeed/build")
+if r.returncode != 0:
+    print("ERROR: Datafeed build failed! Aborting.")
+    exit(1)
 
 print("\n=== Building engine ===")
-run("make -j4", cwd=f"{PROJECT}/engine/build")
+r = run("make -j4", cwd=f"{PROJECT}/engine/build")
+if r.returncode != 0:
+    print("ERROR: Engine build failed! Aborting.")
+    exit(1)
 
 print("\n=== Starting services ===")
 

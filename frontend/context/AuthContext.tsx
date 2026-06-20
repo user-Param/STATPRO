@@ -1,13 +1,12 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { apiRequest } from '../lib/api-client';
+import { apiRequest, ApiError, NetworkError } from '../lib/api-client';
 
 interface User {
   id: string;
   username: string;
   email: string;
-  // Add other profile fields as needed from backend/src/schema.ts
 }
 
 interface AuthContextType {
@@ -49,15 +48,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const userData = await apiRequest<User>('/profile');
         setUser(userData);
       } catch (error: unknown) {
-        const message = error instanceof Error ? error.message : String(error);
-        // Only logout on actual authentication errors (401)
-        if (message === 'Unauthorized') {
-          console.error('Auth check failed: Unauthorized', error);
+        if (error instanceof ApiError && error.status === 401) {
+          console.error('Auth check failed: Unauthorized');
           logout();
+        } else if (error instanceof NetworkError) {
+          console.error('Auth check failed: Network error -', error.message);
+          setUser(null);
         } else {
-          // For other errors (like 404 profile not found, network errors, etc),
-          // keep the token but clear user data so we can retry later
-          console.error('Auth check failed: Non-auth error', error);
+          console.error('Auth check failed:', error instanceof Error ? error.message : String(error));
           setUser(null);
         }
       }

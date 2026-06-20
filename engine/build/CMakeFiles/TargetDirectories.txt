@@ -1,3 +1,0 @@
-/Users/param/Documents/STATPRO/engine/build/CMakeFiles/engine.dir
-/Users/param/Documents/STATPRO/engine/build/CMakeFiles/edit_cache.dir
-/Users/param/Documents/STATPRO/engine/build/CMakeFiles/rebuild_cache.dir

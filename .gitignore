@@ -1,1 +1,20 @@
-*.txt
+# Build artifacts
+datafeed/build/
+engine/build/
+broker/build/
+
+# Dependencies
+node_modules/
+bun.lock
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db

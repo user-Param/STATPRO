@@ -1,6 +1,6 @@
 import pg from "pg";
 
-const connectionString = process.env.DATABASE_URL || "postgres://statpro@localhost:5432/statpro";
+const connectionString = process.env.DATABASE_URL || "postgres://statpro:statpro@localhost:5432/statpro";
 const client = new pg.Client({ connectionString });
 
 const schema = `

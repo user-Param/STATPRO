@@ -103,7 +103,12 @@ export const auth = {
     try {
       const { payload } = await jwtVerify(token, encodedSecret);
       const userId = payload.userId as number;
-      return await handler(userId);
+      try {
+        return await handler(userId);
+      } catch (handlerError) {
+        console.error("\x1b[31m[Auth]\x1b[0m Handler error:", handlerError);
+        return new Response(JSON.stringify({ error: "Internal server error" }), { status: 500 });
+      }
     } catch (e) {
       return new Response(JSON.stringify({ error: "Invalid token" }), { status: 401 });
     }

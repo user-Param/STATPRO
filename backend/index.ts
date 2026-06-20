@@ -15,10 +15,11 @@ const port = process.env.PORT || 4000;
  * without rewriting every handler to use (req, res).
  */
 function createWebRequest(req: express.Request) {
+  const isBodyMethod = ["POST", "PUT", "PATCH"].includes(req.method);
   return new Request(`http://localhost:${port}${req.url}`, {
     method: req.method,
     headers: req.headers as HeadersInit,
-    body: JSON.stringify(req.body),
+    body: isBodyMethod ? JSON.stringify(req.body) : undefined,
   });
 }
 

@@ -24,8 +24,15 @@ export async function apiRequest<T>(endpoint: string, options: RequestInit = {})
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
-    ...(options.headers as Record<string, string>),
   };
+
+  // Merge in any headers from options
+  if (options.headers) {
+    const incoming = options.headers as Record<string, string>;
+    for (const key in incoming) {
+      headers[key] = incoming[key];
+    }
+  }
 
   if (token) {
     headers['Authorization'] = `Bearer ${token}`;

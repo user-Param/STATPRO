@@ -7,7 +7,6 @@ interface User {
   id: string;
   username: string;
   email: string;
-  // Add other profile fields as needed from backend/src/schema.ts
 }
 
 interface AuthContextType {
@@ -48,7 +47,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       try {
         const userData = await apiRequest<User>('/profile');
         setUser(userData);
-      } catch (error) {
+      } catch (error: unknown) {
         if (error instanceof ApiError && error.status === 401) {
           console.error('Auth check failed: Unauthorized');
           logout();

@@ -130,26 +130,47 @@ export const trade = {
  * Global Redis Listener for Microservice Updates
  */
 async function startGlobalListener() {
-  redisSub.subscribe(CHANNELS.EXECUTION_STATUS, CHANNELS.ORDER_EVENTS);
+  try {
+    await redisSub.subscribe(CHANNELS.EXECUTION_STATUS, CHANNELS.ORDER_EVENTS);
+    console.log(`\x1b[32m[Redis Listener]\x1b[0m Subscribed to channels: ${CHANNELS.EXECUTION_STATUS}, ${CHANNELS.ORDER_EVENTS}`);
+  } catch (e) {
+    console.error("\x1b[31m[Redis Listener Error]\x1b[0m Failed to subscribe to channels:", e);
+    return;
+  }
 
   redisSub.on("message", async (channel, message) => {
+    let data: any;
     try {
-      const data = JSON.parse(message);
-      
-      if (channel === CHANNELS.EXECUTION_STATUS || channel === CHANNELS.ORDER_EVENTS) {
-        console.log(`\x1b[35m[Redis Listener]\x1b[0m Received status update for Trade ${data.tradeId}: ${data.status}`);
-
-        await db.update(trades)
-          .set({
-            status: data.status,
-            pnl: data.pnl
-          })
-          .where(eq(trades.id, data.tradeId));
-      }
+      data = JSON.parse(message);
     } catch (e) {
-      console.error("\x1b[31m[Redis Listener Error]\x1b[0m Failed to process microservice update:", e);
+      console.error(`\x1b[31m[Redis Listener Error]\x1b[0m Invalid JSON on channel ${channel}:`, message);
+      return;
     }
+
+    if (!data.tradeId || !data.status) {
+      console.warn(`\x1b[33m[Redis Listener]\x1b[0m Received malformed message on ${channel}: missing tradeId or status`);
+      return;
+    }
+
+    try {
+      console.log(`\x1b[35m[Redis Listener]\x1b[0m Received status update for Trade ${data.tradeId}: ${data.status}`);
+
+      await db.update(trades)
+        .set({
+          status: data.status,
+          pnl: data.pnl
+        })
+        .where(eq(trades.id, data.tradeId));
+    } catch (e) {
+      console.error(`\x1b[31m[Redis Listener Error]\x1b[0m Failed to update trade ${data.tradeId} in DB:`, e);
+    }
+  });
+
+  redisSub.on("error", (e) => {
+    console.error("\x1b[31m[Redis Listener Error]\x1b[0m Redis subscriber error:", e);
   });
 }
 
-startGlobalListener();
+startGlobalListener().catch((e) => {
+  console.error("\x1b[31m[Redis Listener Error]\x1b[0m Failed to start global listener:", e);
+});

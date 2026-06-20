@@ -35,24 +35,50 @@ export const requestResponse = async (channelReq: string, channelRes: string, da
   const payload = JSON.stringify({ ...data, requestId });
 
   return new Promise((resolve, reject) => {
+    const cleanup = () => {
+      clearTimeout(timer);
+      redisSub.off("message", handler);
+    };
+
     const timer = setTimeout(() => {
-      redisSub.unsubscribe(channelRes);
-      reject(new Error(`Timeout waiting for response on ${channelRes}`));
+      cleanup();
+      reject(new Error(`Timeout waiting for response on ${channelRes} (requestId: ${requestId})`));
     }, timeout);
 
     const handler = (channel: string, message: string) => {
-      if (channel === channelRes) {
-        const response = JSON.parse(message);
-        if (response.requestId === requestId) {
-          clearTimeout(timer);
-          redisSub.off("message", handler);
-          resolve(response);
-        }
+      if (channel !== channelRes) return;
+
+      let response: any;
+      try {
+        response = JSON.parse(message);
+      } catch (e) {
+        console.error(`\x1b[31m[Redis]\x1b[0m Invalid JSON response on ${channelRes}:`, message);
+        return;
+      }
+
+      if (response.requestId === requestId) {
+        cleanup();
+        resolve(response);
       }
     };
 
-    redisSub.subscribe(channelRes);
+    redisSub.subscribe(channelRes).catch((e) => {
+      cleanup();
+      reject(new Error(`Failed to subscribe to ${channelRes}: ${e instanceof Error ? e.message : String(e)}`));
+    });
     redisSub.on("message", handler);
-    redisPub.publish(channelReq, payload);
+    redisPub.publish(channelReq, payload).catch((e) => {
+      cleanup();
+      reject(new Error(`Failed to publish to ${channelReq}: ${e instanceof Error ? e.message : String(e)}`));
+    });
   });
 };
+
+// Handle Redis connection errors to prevent unhandled exceptions
+redisPub.on("error", (e) => {
+  console.error("\x1b[31m[Redis Publisher Error]\x1b[0m", e.message);
+});
+
+redisSub.on("error", (e) => {
+  console.error("\x1b[31m[Redis Subscriber Error]\x1b[0m", e.message);
+});
